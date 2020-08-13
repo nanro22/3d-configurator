@@ -1,0 +1,7 @@
+.webgl-content { display: flex; flex-direction: row; border: 0; margin: 0; padding: 0}
+.menu {height: 100%;width: 200px;}
+
+.webgl-content .footer {margin-top: 5px; height: 38px; line-height: 38px; font-family: Helvetica, Verdana, Arial, sans-serif; font-size: 18px;}
+.webgl-content .footer, .title {height: 100%; display: inline-block; background: transparent center no-repeat;}
+.webgl-content .footer .title {margin-right: 10px; float: right;}
+.webgl-content .footer .fullscreen {background-image: url('fullscreen.png'); width: 38px; float: right;}
