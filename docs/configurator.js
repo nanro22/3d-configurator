@@ -11,7 +11,7 @@ function readURL(input) {
         var reader = new FileReader();
         reader.onload = function (e) {
             document.getElementById('imgback').src=e.target.result;
-            document.getElementById('unityContainer').style.backgroundImage="url('" + document.getElementById('imgback').src + "')";
+            document.getElementById('viewerContainer').style.backgroundImage="url('" + document.getElementById('imgback').src + "')";
         };
         reader.readAsDataURL(input.files[0]);
     }
