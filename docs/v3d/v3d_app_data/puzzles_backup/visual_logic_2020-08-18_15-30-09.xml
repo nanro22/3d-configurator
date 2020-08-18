@@ -1,0 +1,167 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="true" scrollx="1092.347412109375" scrolly="562.906005859375" scale="0.8005495019536715">
+    <block xmlns="https://developers.google.com/blockly/xml" type="initSettings" id="XtmV2SF[F-3GtO[7jp6+" x="-1130" y="-610">
+      <field name="LOAD_COMP_ASSETS">FALSE</field>
+      <field name="FULLSCREEN">TRUE</field>
+      <field name="BKG_TRANSPARENCY">FALSE</field>
+      <field name="PRESERVE_DRAW_BUF">FALSE</field>
+      <field name="FADE_ANNOTATIONS">TRUE</field>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="loadFont" id="pBG2X7,x4!j0[K52vi|!" x="-790" y="-590">
+      <value name="URL">
+        <shadow type="text" id="^hgUaA}z%r]W}hOo8*eM">
+          <field name="TEXT">./fonts/Bellefair-Regular.ttf</field>
+        </shadow>
+      </value>
+      <value name="FONTFAMILY">
+        <shadow type="text" id="$.ez1x5#!k!VRLJ(t=i!">
+          <field name="TEXT">bellefair</field>
+        </shadow>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="initPreloader" id="obuCD,*3ZIb4~P`FyHS;" x="-1130" y="-410">
+      <statement name="DO_START">
+        <block type="setHTMLElemStyle" id="jW66#OLV;yi,8zF6@FL!">
+          <field name="PROPERTY">display</field>
+          <field name="PARENT">TRUE</field>
+          <value name="VALUE">
+            <block type="text" id="K{Y:8KY~I+f{QMRaoh%B">
+              <field name="TEXT">block</field>
+            </block>
+          </value>
+          <value name="ID">
+            <block type="text" id="{EYnL2[qJ/N:R[L#6*hm">
+              <field name="TEXT">preloader_container</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+      <statement name="DO_PROGRESS">
+        <block type="setHTMLElemStyle" id="fa|pFlxLa6~[NoJ=g+x1">
+          <field name="PROPERTY">height</field>
+          <field name="PARENT">TRUE</field>
+          <value name="VALUE">
+            <block type="text_join" id="Jkf!)H9b}%=VmY[hRLB5">
+              <mutation items="2"/>
+              <value name="ADD0">
+                <block type="math_round" id="dKu$(6RKCWt!::4.!N?s">
+                  <field name="OP">ROUND</field>
+                  <value name="NUM">
+                    <shadow type="math_number" id="sB,X~kC7=K)+gg{N/)G;">
+                      <field name="NUM">2.5</field>
+                    </shadow>
+                    <block type="math_arithmetic" id="4x.1Tj8b72R,9Uclt9a4">
+                      <field name="OP">DIVIDE</field>
+                      <value name="A">
+                        <shadow type="math_number" id="bp[pHuBB(Y=Y/:CzJNu.">
+                          <field name="NUM">2</field>
+                        </shadow>
+                        <block type="percentage" id="v_om9R9W+t|I8.7)psRJ"/>
+                      </value>
+                      <value name="B">
+                        <shadow type="math_number" id="xm=X`Bq0/1?=`Iwo0iA_">
+                          <field name="NUM">4</field>
+                        </shadow>
+                      </value>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <value name="ADD1">
+                <block type="text" id="m#j:1uxKN}TUTTn{co$b">
+                  <field name="TEXT">%</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <value name="ID">
+            <block type="text" id="j^{81JY[$23p]L+xq?,D">
+              <field name="TEXT">preloader_color</field>
+            </block>
+          </value>
+          <next>
+            <block type="setHTMLElemAttribute" id="dwJ^KE$2i+#OR|lBh.Wr">
+              <field name="ATTRIBUTE">innerHTML</field>
+              <field name="PARENT">TRUE</field>
+              <value name="VALUE">
+                <block type="text_join" id="q^#g#6Mo[W$C#uAWLS$#">
+                  <mutation items="2"/>
+                  <value name="ADD0">
+                    <block type="math_round" id="n;:{Zc7HMBJ?C/-V%((G">
+                      <field name="OP">ROUND</field>
+                      <value name="NUM">
+                        <shadow type="math_number">
+                          <field name="NUM">2.5</field>
+                        </shadow>
+                        <block type="math_arithmetic" id="JK{-NB#bbk_gF~,,ln_+">
+                          <field name="OP">DIVIDE</field>
+                          <value name="A">
+                            <shadow type="math_number">
+                              <field name="NUM">2</field>
+                            </shadow>
+                            <block type="percentage" id="7Vm=%Az)A4(P_7vMZ#8#"/>
+                          </value>
+                          <value name="B">
+                            <shadow type="math_number" id="1-SY|8?#o]BTD6?v7a[B">
+                              <field name="NUM">4</field>
+                            </shadow>
+                          </value>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                  <value name="ADD1">
+                    <block type="text" id="PEzHpT?fBIv3y+}6LIZ%">
+                      <field name="TEXT">%</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <value name="ID">
+                <block type="text" id="BSFy}=h)n7~dg3Y`zFvi">
+                  <field name="TEXT">preloader_percentage</field>
+                </block>
+              </value>
+            </block>
+          </next>
+        </block>
+      </statement>
+      <statement name="DO_END">
+        <block type="setHTMLElemStyle" id="T_6N6]1Fs|f6oMr}s-xe">
+          <field name="PROPERTY">display</field>
+          <field name="PARENT">TRUE</field>
+          <value name="VALUE">
+            <block type="text" id="UQCc;_b9TNJvAEHfahOE">
+              <field name="TEXT">none</field>
+            </block>
+          </value>
+          <value name="ID">
+            <block type="text" id="L5CV+-`#oS(vVJ,4_%D;">
+              <field name="TEXT">preloader_container</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <tab name="main" type="MainTab" active="false" scrollx="1115" scrolly="566" scale="0.9">
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenClicked" id="^@wQJZy7e7l~l,Y.TV9=" x="-1130" y="-530">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" enableifmissed="false"></mutation>
+      <value name="VALUE">
+        <block type="groupList" id="I~(qXn7.+So)RteY;FtR">
+          <field name="FIELDNAME">lamp1</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="hide" id="$/aAy}/n#RgBA)%6In*`">
+          <value name="VALUE">
+            <block type="groupList" id="W.`fc;UbTL{9jqEEmzN@">
+              <field name="FIELDNAME">lamp1</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <editorsettings viewport-x="1422" viewport-y="28" viewport-w="960" viewport-h="604" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>
