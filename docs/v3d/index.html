@@ -33,13 +33,11 @@
                 </div>
                 <div class="type-controll-panel">
                     <div class="type-head-div">
-                        <header class="controll-panel-header">Hauteur du mât (m)</header>
+                        <header class="controll-panel-header">Lumière</header>
                     </div>
                     <div class="type-buttons-div flex-center">
-                        <div class="ring-type-button ring-button-selected" id="button_hauteur_3" > <span>3 </span></div>
-                        <div class="ring-type-button" id="button_hauteur_4" ><span> 4 </span></div>
-                        <div class="ring-type-button" id="button_hauteur_5" ><span> 5 </span> </div>
-                        <div class="ring-type-button" id="button_hauteur_6" ><span> 6 </span></div>
+                        <div class="ring-type-button ring-button-selected" id="button_jour" > <span>Jour </span></div>
+                        <div class="ring-type-button" id="button_nuit" ><span> Nuit </span></div>
                     </div>
                 </div>
                 <div class="type-controll-panel">
@@ -57,33 +55,19 @@
                         <header class="controll-panel-header">Couleur</header>
                     </div>
                     <div class="type-buttons-div">
-                        <div class="ring-type-button ring-button-selected" id="button_material_1" style="background-color: #dedede;"></div>
-                        <div class="ring-type-button" id="button_material_2" style="background-color: #f8c559;"></div>
-                        <div class="ring-type-button" id="button_material_3" style="background-color: #f3bbb2;"></div>
+                        <div class="ring-type-button ring-button-selected" id="button_material_1" style="background-color: #616161;"></div>
+                        <div class="ring-type-button" id="button_material_2" style="background-color: #b8871e;"></div>
+                        <div class="ring-type-button" id="button_material_3" style="background-color: #5d9c69;"></div>
                     </div>
                 </div>
-                
-                <div class="type-controll-panel" id="engrave_panel">
+                <div class="type-controll-panel">
                     <div class="type-head-div">
-                        <header class="controll-panel-header">Gravure</header>
+                        <header class="controll-panel-header">Image de fond</header>
                     </div>
                     <div class="type-buttons-div">
-                        <div class="engrave-text-div">
-                            <input class="engrave-input-text" placeholder="Votre text" id="engrave_text">
-                            <select class="engrave-font-list" id="engrave_font" name="Fonte">
-                                <option value="days-one">Days One</option>
-                                <option value="bellefair">Bellfare</option>
-                                <option value="caveat">Caveat</option>
-                                <option value="great_vibes">Great Vibes</option>
-                                <option value="lobster">Lobster</option>
-                            </select>
-                        </div>
-                         <div class="type-buttons-div flex-center">
-                        <div class="ring-type-button" id="button_engrave"><span> graver </span> </div>
-                        <div class="ring-type-button" id="button_clear"><span>effacer </span></div>
+                        <input type='file' onchange="readURL(this);" />
+                        <img id="imgback" src="http://placehold.it/120" alt="votre image" style="width:120px;height:120px"/>
                     </div>
-                    </div>
-                </div>
             </div>
         </div>
         <div class="local-preloader-screen" id="local_preloader_screen" style="display:none;">
@@ -117,7 +101,7 @@
             document.getElementById(eltPrefix+suffix).classList.add("ring-button-selected");
         }
 
-        var params={"nb_lamp":3,"hauteur":3,"inclinaison":2,"material":1};
+        var params={"nb_lamp":3,"hauteur":3,"inclinaison":2,"material":1,"jour":true};
 
         function addButtonListener(eltPrefix,min,max,paramName){
             for(let i=min;i<max;i++){
@@ -133,9 +117,35 @@
 
         var nb_lamp = 3;
         addButtonListener("button_nb_lamp_",1,4,"nb_lamp");
-        addButtonListener("button_hauteur_",3,7,"hauteur");
         addButtonListener("button_curve_",0,3,"inclinaison");
         addButtonListener("button_material_",1,4,"material");
-        
+        document.getElementById("button_jour").addEventListener("click",e=>{
+                if(!params["jour"]){
+                    document.getElementById("button_nuit").classList.remove("ring-button-selected");
+                    params["jour"]=true;
+                    document.getElementById("button_jour").classList.add("ring-button-selected");
+                }
+            }); 
+        document.getElementById("button_nuit").addEventListener("click",e=>{
+                if(params["jour"]){
+                    document.getElementById("button_jour").classList.remove("ring-button-selected");
+                    params["jour"]=false;
+                    document.getElementById("button_nuit").classList.add("ring-button-selected");
+                }
+            });
+
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    document.getElementById('imgback').src=e.target.result;
+                    let divElmt=document.getElementById('main_app').contentWindow.document.getElementById("v3d-container");
+                    divElmt.style.backgroundImage="url('" + document.getElementById('imgback').src + "')";
+                    divElmt.style.backgroundSize="cover";
+                    divElmt.style.backgroundRepeat="no-repeat";
+                };
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
     </script>
 </html>
