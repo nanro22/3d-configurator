@@ -158,7 +158,7 @@
       </statement>
     </block>
   </tab>
-  <tab name="main" type="MainTab" active="true" scrollx="1212.2674560546875" scrolly="674.0934143066406" scale="0.7912092655287302">
+  <tab name="main" type="MainTab" active="true" scrollx="1231.57470703125" scrolly="698.2891845703125" scale="0.8894994466151905">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="NLUlWtZaGs$9tHAp=RT6" type="">frame</variable>
     </variables>
@@ -404,81 +404,17 @@
         </block>
       </value>
       <statement name="DO">
-        <block type="setMaterialColor" id="]MOH~P8V=M=IzR1W*SL/">
-          <mutation xmlns="http://www.w3.org/1999/xhtml" flexcolinput="false" usecsscolor="false"></mutation>
-          <field name="MAT_COL_NAME">Principled BSDF Color</field>
-          <value name="MATERIAL">
-            <block type="materialList" id="__Ed?KUSQp$.gGu/7#.z">
+        <block type="assignMaterial" id=")).x,wQhT`CXdD=4QX|L">
+          <value name="VALUE2">
+            <block type="materialList" id="Z(]22mPRt/eroI9hR_z@">
               <field name="FIELDNAME">peinture brillan</field>
             </block>
           </value>
-          <value name="R">
-            <shadow type="math_number" id="]{Lo*Opip//Xf*W)^9F(">
-              <field name="NUM">0.141</field>
-            </shadow>
-          </value>
-          <value name="G">
-            <shadow type="math_number" id="w[f0C_v|lE.zf~ImC)NV">
-              <field name="NUM">0.141</field>
-            </shadow>
-          </value>
-          <value name="B">
-            <shadow type="math_number" id="MHXY9,zuF}qqy-p=U}Z]">
-              <field name="NUM">0.141</field>
-            </shadow>
-          </value>
-          <next>
-            <block type="setMaterialColor" id="vO02(y7n=*rfY]E=wF9%">
-              <mutation xmlns="http://www.w3.org/1999/xhtml" flexcolinput="false" usecsscolor="false"></mutation>
-              <field name="MAT_COL_NAME">Principled BSDF Color</field>
-              <value name="MATERIAL">
-                <block type="materialList" id="M2.hWa0F[i^D^IkkHAJ-">
-                  <field name="FIELDNAME">peinture brillan.001</field>
-                </block>
-              </value>
-              <value name="R">
-                <shadow type="math_number" id="wlMM]Mo#Dru-J6?z^,`H">
-                  <field name="NUM">0.141</field>
-                </shadow>
-              </value>
-              <value name="G">
-                <shadow type="math_number" id="KpWkyprY7i~SfPz+]_Lc">
-                  <field name="NUM">0.141</field>
-                </shadow>
-              </value>
-              <value name="B">
-                <shadow type="math_number" id="j!gHyyLNh_{!.lj-h=66">
-                  <field name="NUM">0.141</field>
-                </shadow>
-              </value>
-              <next>
-                <block type="setMaterialColor" id="/g=3.Tu;q6b_K2`|6_3y">
-                  <mutation xmlns="http://www.w3.org/1999/xhtml" flexcolinput="false" usecsscolor="false"></mutation>
-                  <field name="MAT_COL_NAME">Principled BSDF Color</field>
-                  <value name="MATERIAL">
-                    <block type="materialList" id="@E(90CJu%%[{9clTah?h">
-                      <field name="FIELDNAME">peinture brillan.002</field>
-                    </block>
-                  </value>
-                  <value name="R">
-                    <shadow type="math_number" id=")*{/n-f)a8H~=~zIv#@F">
-                      <field name="NUM">0.141</field>
-                    </shadow>
-                  </value>
-                  <value name="G">
-                    <shadow type="math_number" id="q,O8oh|ZvE~KL}=Z@4.L">
-                      <field name="NUM">0.141</field>
-                    </shadow>
-                  </value>
-                  <value name="B">
-                    <shadow type="math_number" id="n6~i2I#*qmN3G^*KQU?S">
-                      <field name="NUM">0.141</field>
-                    </shadow>
-                  </value>
-                </block>
-              </next>
+          <value name="VALUE1">
+            <block type="groupList" id="7j?w.T{?J@SzQUAgo$|B">
+              <field name="FIELDNAME">lamp2</field>
             </block>
-          </next>
+          </value>
         </block>
       </statement>
       <next>
@@ -491,81 +427,17 @@
             </block>
           </value>
           <statement name="DO">
-            <block type="setMaterialColor" id="uM%[~BzHx[*+e-1:yy!Z">
-              <mutation xmlns="http://www.w3.org/1999/xhtml" flexcolinput="false" usecsscolor="false"></mutation>
-              <field name="MAT_COL_NAME">Principled BSDF Color</field>
-              <value name="MATERIAL">
-                <block type="materialList" id="BD:Q;s.9tj{4/2hW-0{}">
-                  <field name="FIELDNAME">peinture brillan</field>
+            <block type="assignMaterial" id="JP.{hPLjtHsPgMu.i497">
+              <value name="VALUE2">
+                <block type="materialList" id="FVv=^PBi#nJR?h}:pgp#">
+                  <field name="FIELDNAME">peinture brillan.001</field>
                 </block>
               </value>
-              <value name="R">
-                <shadow type="math_number" id="PRG3HBUrn~BexWl~XgkB">
-                  <field name="NUM">0.38</field>
-                </shadow>
-              </value>
-              <value name="G">
-                <shadow type="math_number" id="g%Dgp-hYCy1BrbfZ+H|n">
-                  <field name="NUM">0.27</field>
-                </shadow>
-              </value>
-              <value name="B">
-                <shadow type="math_number" id="G:47+Dy.,Sy7G)E.rb`M">
-                  <field name="NUM">0.06</field>
-                </shadow>
-              </value>
-              <next>
-                <block type="setMaterialColor" id="wJ}Bmf|D^bB0h`P(y9Mo">
-                  <mutation xmlns="http://www.w3.org/1999/xhtml" flexcolinput="false" usecsscolor="false"></mutation>
-                  <field name="MAT_COL_NAME">Principled BSDF Color</field>
-                  <value name="MATERIAL">
-                    <block type="materialList" id="3Sh}JDw}C-{%:E-bhH{6">
-                      <field name="FIELDNAME">peinture brillan.001</field>
-                    </block>
-                  </value>
-                  <value name="R">
-                    <shadow type="math_number" id="b,.2,!Od`Fa5XMuG-+_1">
-                      <field name="NUM">0.38</field>
-                    </shadow>
-                  </value>
-                  <value name="G">
-                    <shadow type="math_number" id="5tk94ViFAR97!h*a@xtL">
-                      <field name="NUM">0.27</field>
-                    </shadow>
-                  </value>
-                  <value name="B">
-                    <shadow type="math_number" id="uoi2I$WN3c9K9:yxDFAx">
-                      <field name="NUM">0.06</field>
-                    </shadow>
-                  </value>
-                  <next>
-                    <block type="setMaterialColor" id="DksNQr75r+b{vpS4U6V7">
-                      <mutation xmlns="http://www.w3.org/1999/xhtml" flexcolinput="false" usecsscolor="false"></mutation>
-                      <field name="MAT_COL_NAME">Principled BSDF Color</field>
-                      <value name="MATERIAL">
-                        <block type="materialList" id="vq/eAKY%$eIrPZbW2I6x">
-                          <field name="FIELDNAME">peinture brillan.002</field>
-                        </block>
-                      </value>
-                      <value name="R">
-                        <shadow type="math_number" id="gQlx9:!Wh7j1BYFe.aqr">
-                          <field name="NUM">0.38</field>
-                        </shadow>
-                      </value>
-                      <value name="G">
-                        <shadow type="math_number" id="vczsx!fxf{ybU0Jt(r9.">
-                          <field name="NUM">0.27</field>
-                        </shadow>
-                      </value>
-                      <value name="B">
-                        <shadow type="math_number" id="VVSm0nOXRq5,TF=ItY-_">
-                          <field name="NUM">0.06</field>
-                        </shadow>
-                      </value>
-                    </block>
-                  </next>
+              <value name="VALUE1">
+                <block type="groupList" id="~__u`q*jn)RHT0kew.56">
+                  <field name="FIELDNAME">lamp2</field>
                 </block>
-              </next>
+              </value>
             </block>
           </statement>
           <next>
@@ -578,81 +450,17 @@
                 </block>
               </value>
               <statement name="DO">
-                <block type="setMaterialColor" id="_@O-q`qN,eK=NriZI(|_">
-                  <mutation xmlns="http://www.w3.org/1999/xhtml" flexcolinput="false" usecsscolor="false"></mutation>
-                  <field name="MAT_COL_NAME">Principled BSDF Color</field>
-                  <value name="MATERIAL">
-                    <block type="materialList" id="iMDEv}=#1rr;x{v[|q*y">
-                      <field name="FIELDNAME">peinture brillan</field>
+                <block type="assignMaterial" id="UNT@-cI,*g?t8bc]fevh">
+                  <value name="VALUE2">
+                    <block type="materialList" id="Tp=F^gw^JnBQA^US5x4W">
+                      <field name="FIELDNAME">peinture brillan.002</field>
                     </block>
                   </value>
-                  <value name="R">
-                    <shadow type="math_number" id="h9RDg*zw;Rf6mqHDF}@C">
-                      <field name="NUM">0.15</field>
-                    </shadow>
-                  </value>
-                  <value name="G">
-                    <shadow type="math_number" id="Wyw7ADsR{^W}DFFRFUJv">
-                      <field name="NUM">0.26</field>
-                    </shadow>
-                  </value>
-                  <value name="B">
-                    <shadow type="math_number" id="B(v)DM}A*}{4;NEHp;7?">
-                      <field name="NUM">0.17</field>
-                    </shadow>
-                  </value>
-                  <next>
-                    <block type="setMaterialColor" id=",aYa;ed3{%C`q|tu`qFd">
-                      <mutation xmlns="http://www.w3.org/1999/xhtml" flexcolinput="false" usecsscolor="false"></mutation>
-                      <field name="MAT_COL_NAME">Principled BSDF Color</field>
-                      <value name="MATERIAL">
-                        <block type="materialList" id="IRUK,0NuP_yo`X6G);Bp">
-                          <field name="FIELDNAME">peinture brillan.001</field>
-                        </block>
-                      </value>
-                      <value name="R">
-                        <shadow type="math_number" id="shyxWAt]~ETvt%FMiL8@">
-                          <field name="NUM">0.15</field>
-                        </shadow>
-                      </value>
-                      <value name="G">
-                        <shadow type="math_number" id="M-V)Aqn]Cl:KA~fIddaX">
-                          <field name="NUM">0.26</field>
-                        </shadow>
-                      </value>
-                      <value name="B">
-                        <shadow type="math_number" id="z*EmQBHl+-Vv=PQ/Mzjr">
-                          <field name="NUM">0.17</field>
-                        </shadow>
-                      </value>
-                      <next>
-                        <block type="setMaterialColor" id="WCV{^a{IZ0v6FwU)L+RC">
-                          <mutation xmlns="http://www.w3.org/1999/xhtml" flexcolinput="false" usecsscolor="false"></mutation>
-                          <field name="MAT_COL_NAME">Principled BSDF Color</field>
-                          <value name="MATERIAL">
-                            <block type="materialList" id="y$l%,4*K5M|$iGg)sJ*%">
-                              <field name="FIELDNAME">peinture brillan.002</field>
-                            </block>
-                          </value>
-                          <value name="R">
-                            <shadow type="math_number" id="arOEZZ+e5xaCJ.OXNmur">
-                              <field name="NUM">0.15</field>
-                            </shadow>
-                          </value>
-                          <value name="G">
-                            <shadow type="math_number" id="^:AhtNtoNpIfn*wjTwG/">
-                              <field name="NUM">0.26</field>
-                            </shadow>
-                          </value>
-                          <value name="B">
-                            <shadow type="math_number" id="yR_L.VTFSYz~xeV{*t|9">
-                              <field name="NUM">0.17</field>
-                            </shadow>
-                          </value>
-                        </block>
-                      </next>
+                  <value name="VALUE1">
+                    <block type="groupList" id="~gKF%g@6xqX^9~8dwncB">
+                      <field name="FIELDNAME">lamp2</field>
                     </block>
-                  </next>
+                  </value>
                 </block>
               </statement>
             </block>
@@ -832,5 +640,5 @@
       </statement>
     </block>
   </tab>
-  <editorsettings viewport-x="1422" viewport-y="28" viewport-w="960" viewport-h="604" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+  <editorsettings viewport-x="1810" viewport-y="134" viewport-w="960" viewport-h="604" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
 </xml>
