@@ -158,10 +158,48 @@
       </statement>
     </block>
   </tab>
-  <tab name="main" type="MainTab" active="true" scrollx="1231.57470703125" scrolly="698.2891845703125" scale="0.8894994466151905">
+  <tab name="main" type="MainTab" active="true" scrollx="1038.5836181640625" scrolly="754.6525268554688" scale="0.8894994466151905">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="NLUlWtZaGs$9tHAp=RT6" type="">frame</variable>
     </variables>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="FT9tc1K@WQ67MX(5gQZr" x="-410" y="-750">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <block type="text" id="4WG_qg3`NRW29x_2/w!h">
+          <field name="TEXT">button_route_on</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="show" id="WG9SWX``1ZT]Y,UR/$N-">
+          <value name="VALUE">
+            <block type="groupList" id="~M$N,LC36/I`SP2$oU,R">
+              <field name="FIELDNAME">route</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+      <next>
+        <block type="eventHTMLElem" id="HiEvuoKCx^LY0+=`BA2A">
+          <field name="EVENT">click</field>
+          <field name="PARENT">TRUE</field>
+          <value name="ID">
+            <block type="text" id="{}e%YdmLWn/em@/d-JYw">
+              <field name="TEXT">button_route_off</field>
+            </block>
+          </value>
+          <statement name="DO">
+            <block type="hide" id=",an6Jf-G5-PY@a[dqtJu">
+              <value name="VALUE">
+                <block type="groupList" id="zk9p1BOD_r5D5vQy;6V~">
+                  <field name="FIELDNAME">route</field>
+                </block>
+              </value>
+            </block>
+          </statement>
+        </block>
+      </next>
+    </block>
     <block xmlns="https://developers.google.com/blockly/xml" type="hide" id="qFsx?mBvRVYVydd}.{:;" x="-750" y="-650">
       <value name="VALUE">
         <block type="groupList" id="yJZM)3;4?9I=w+|;{}@P">
@@ -178,39 +216,160 @@
         </block>
       </next>
     </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="whenClicked" id="#k=E:#mJT7Yf_?_4cisH" x="-1110" y="-630">
-      <mutation xmlns="http://www.w3.org/1999/xhtml" enableifmissed="false"></mutation>
-      <value name="VALUE">
-        <block type="groupList" id="_ip}8W$Ef;O:*S^jc}j!">
-          <field name="FIELDNAME">route</field>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="sewxOACLOhfNN~G0rz6l" x="-310" y="-510">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <block type="text" id="pioQnQl$LZ`M@y?)q!3u">
+          <field name="TEXT">button_material_1</field>
         </block>
       </value>
       <statement name="DO">
-        <block type="hide" id="ca-/31zW9)zM/c]B?|JT">
-          <value name="VALUE">
-            <block type="groupList" id="EmT!d6N[}bFp5V)O)?,E">
-              <field name="FIELDNAME">route</field>
+        <block type="assignMaterial" id=")).x,wQhT`CXdD=4QX|L">
+          <value name="VALUE2">
+            <block type="materialList" id="Z(]22mPRt/eroI9hR_z@">
+              <field name="FIELDNAME">peinture brillan</field>
             </block>
           </value>
+          <value name="VALUE1">
+            <block type="groupList" id="7j?w.T{?J@SzQUAgo$|B">
+              <field name="FIELDNAME">lamp2</field>
+            </block>
+          </value>
+          <next>
+            <block type="assignMaterial" id="Q$hcs-sK%]3w[W7aK/D_">
+              <value name="VALUE2">
+                <block type="materialList" id="xE@Y+Rg_A{~n86Z+d`UO">
+                  <field name="FIELDNAME">peinture brillan</field>
+                </block>
+              </value>
+              <value name="VALUE1">
+                <block type="groupList" id="5*.~!Wa/.qOLJ#@yz(+P">
+                  <field name="FIELDNAME">lamp1</field>
+                </block>
+              </value>
+              <next>
+                <block type="assignMaterial" id="G1U18l%O_Nc=8rP-~u!_">
+                  <value name="VALUE2">
+                    <block type="materialList" id="N1E(-n0/yPH5]`{|gHH3">
+                      <field name="FIELDNAME">peinture brillan</field>
+                    </block>
+                  </value>
+                  <value name="VALUE1">
+                    <block type="groupList" id="|[rDPEnw+-S,rIrDcD{I">
+                      <field name="FIELDNAME">lamp3</field>
+                    </block>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </next>
         </block>
       </statement>
       <next>
-        <block type="whenClicked" id="_CBiC5bMB6pQGBpiU},i">
-          <mutation xmlns="http://www.w3.org/1999/xhtml" enableifmissed="false"></mutation>
-          <value name="VALUE">
-            <block type="groupList" id="$Q?!v~V-bY:8woE0+K0j">
-              <field name="FIELDNAME">poteau</field>
+        <block type="eventHTMLElem" id="?-.juKaxk@]Q}inr4ikx">
+          <field name="EVENT">click</field>
+          <field name="PARENT">TRUE</field>
+          <value name="ID">
+            <block type="text" id="*IpBaVtg|Q3.Sf97i/yI">
+              <field name="TEXT">button_material_2</field>
             </block>
           </value>
           <statement name="DO">
-            <block type="show" id="JPyn,M)XR-$fuwAruT16">
-              <value name="VALUE">
-                <block type="groupList" id="nBNh`f:9eu8P8StjoRR-">
-                  <field name="FIELDNAME">route</field>
+            <block type="assignMaterial" id="JP.{hPLjtHsPgMu.i497">
+              <value name="VALUE2">
+                <block type="materialList" id="FVv=^PBi#nJR?h}:pgp#">
+                  <field name="FIELDNAME">peinture brillan.001</field>
                 </block>
               </value>
+              <value name="VALUE1">
+                <block type="groupList" id="~__u`q*jn)RHT0kew.56">
+                  <field name="FIELDNAME">lamp2</field>
+                </block>
+              </value>
+              <next>
+                <block type="assignMaterial" id="O%/eC{l~$35;vR3T4@s-">
+                  <value name="VALUE2">
+                    <block type="materialList" id="6_fOPJk^*6(cjx=rwkQ`">
+                      <field name="FIELDNAME">peinture brillan.001</field>
+                    </block>
+                  </value>
+                  <value name="VALUE1">
+                    <block type="groupList" id="2JYt`xij_IamWAaEO~=@">
+                      <field name="FIELDNAME">lamp3</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="assignMaterial" id="e]hH:XzE,hn4(M,!CGQC">
+                      <value name="VALUE2">
+                        <block type="materialList" id="tR:::6gM)T@%tcyCBTkV">
+                          <field name="FIELDNAME">peinture brillan.001</field>
+                        </block>
+                      </value>
+                      <value name="VALUE1">
+                        <block type="groupList" id="O0VVE+Q~w^MB|FZi1ig*">
+                          <field name="FIELDNAME">lamp1</field>
+                        </block>
+                      </value>
+                    </block>
+                  </next>
+                </block>
+              </next>
             </block>
           </statement>
+          <next>
+            <block type="eventHTMLElem" id="7OO=l%D]*%R0BINraP%?">
+              <field name="EVENT">click</field>
+              <field name="PARENT">TRUE</field>
+              <value name="ID">
+                <block type="text" id="l.TsWsThM0-Foub9SDHS">
+                  <field name="TEXT">button_material_3</field>
+                </block>
+              </value>
+              <statement name="DO">
+                <block type="assignMaterial" id="UNT@-cI,*g?t8bc]fevh">
+                  <value name="VALUE2">
+                    <block type="materialList" id="Tp=F^gw^JnBQA^US5x4W">
+                      <field name="FIELDNAME">peinture brillan.002</field>
+                    </block>
+                  </value>
+                  <value name="VALUE1">
+                    <block type="groupList" id="~gKF%g@6xqX^9~8dwncB">
+                      <field name="FIELDNAME">lamp2</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="assignMaterial" id="qcb-lY:;1J~Th7zl^N-.">
+                      <value name="VALUE2">
+                        <block type="materialList" id="lTUL~kl7yPpBwXjY$Z^V">
+                          <field name="FIELDNAME">peinture brillan.002</field>
+                        </block>
+                      </value>
+                      <value name="VALUE1">
+                        <block type="groupList" id="r]HlNsxOOvW%7Opz`@%y">
+                          <field name="FIELDNAME">lamp1</field>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="assignMaterial" id="R=0}b:1$d16);6;[5uU:">
+                          <value name="VALUE2">
+                            <block type="materialList" id="vImAB/1*KcFxUsEou*F4">
+                              <field name="FIELDNAME">peinture brillan.002</field>
+                            </block>
+                          </value>
+                          <value name="VALUE1">
+                            <block type="groupList" id=")b6B;PlofK)Jje_s:taW">
+                              <field name="FIELDNAME">lamp3</field>
+                            </block>
+                          </value>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </statement>
+            </block>
+          </next>
         </block>
       </next>
     </block>
@@ -390,79 +549,6 @@
                   </next>
                 </block>
               </next>
-            </block>
-          </next>
-        </block>
-      </next>
-    </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="sewxOACLOhfNN~G0rz6l" x="-590" y="-430">
-      <field name="EVENT">click</field>
-      <field name="PARENT">TRUE</field>
-      <value name="ID">
-        <block type="text" id="pioQnQl$LZ`M@y?)q!3u">
-          <field name="TEXT">button_material_1</field>
-        </block>
-      </value>
-      <statement name="DO">
-        <block type="assignMaterial" id=")).x,wQhT`CXdD=4QX|L">
-          <value name="VALUE2">
-            <block type="materialList" id="Z(]22mPRt/eroI9hR_z@">
-              <field name="FIELDNAME">peinture brillan</field>
-            </block>
-          </value>
-          <value name="VALUE1">
-            <block type="groupList" id="7j?w.T{?J@SzQUAgo$|B">
-              <field name="FIELDNAME">lamp2</field>
-            </block>
-          </value>
-        </block>
-      </statement>
-      <next>
-        <block type="eventHTMLElem" id="?-.juKaxk@]Q}inr4ikx">
-          <field name="EVENT">click</field>
-          <field name="PARENT">TRUE</field>
-          <value name="ID">
-            <block type="text" id="*IpBaVtg|Q3.Sf97i/yI">
-              <field name="TEXT">button_material_2</field>
-            </block>
-          </value>
-          <statement name="DO">
-            <block type="assignMaterial" id="JP.{hPLjtHsPgMu.i497">
-              <value name="VALUE2">
-                <block type="materialList" id="FVv=^PBi#nJR?h}:pgp#">
-                  <field name="FIELDNAME">peinture brillan.001</field>
-                </block>
-              </value>
-              <value name="VALUE1">
-                <block type="groupList" id="~__u`q*jn)RHT0kew.56">
-                  <field name="FIELDNAME">lamp2</field>
-                </block>
-              </value>
-            </block>
-          </statement>
-          <next>
-            <block type="eventHTMLElem" id="7OO=l%D]*%R0BINraP%?">
-              <field name="EVENT">click</field>
-              <field name="PARENT">TRUE</field>
-              <value name="ID">
-                <block type="text" id="l.TsWsThM0-Foub9SDHS">
-                  <field name="TEXT">button_material_3</field>
-                </block>
-              </value>
-              <statement name="DO">
-                <block type="assignMaterial" id="UNT@-cI,*g?t8bc]fevh">
-                  <value name="VALUE2">
-                    <block type="materialList" id="Tp=F^gw^JnBQA^US5x4W">
-                      <field name="FIELDNAME">peinture brillan.002</field>
-                    </block>
-                  </value>
-                  <value name="VALUE1">
-                    <block type="groupList" id="~gKF%g@6xqX^9~8dwncB">
-                      <field name="FIELDNAME">lamp2</field>
-                    </block>
-                  </value>
-                </block>
-              </statement>
             </block>
           </next>
         </block>
