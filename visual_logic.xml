@@ -158,10 +158,26 @@
       </statement>
     </block>
   </tab>
-  <tab name="main" type="MainTab" active="true" scrollx="1244.8297119140625" scrolly="505.7218322753906" scale="0.5568374181775593">
+  <tab name="main" type="MainTab" active="true" scrollx="1212.2674560546875" scrolly="674.0934143066406" scale="0.7912092655287302">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="NLUlWtZaGs$9tHAp=RT6" type="">frame</variable>
     </variables>
+    <block xmlns="https://developers.google.com/blockly/xml" type="hide" id="qFsx?mBvRVYVydd}.{:;" x="-750" y="-650">
+      <value name="VALUE">
+        <block type="groupList" id="yJZM)3;4?9I=w+|;{}@P">
+          <field name="FIELDNAME">lamp1</field>
+        </block>
+      </value>
+      <next>
+        <block type="hide" id="^Y`q^Y[gCed/=TrGog[7">
+          <value name="VALUE">
+            <block type="groupList" id="cG*04Qh-:;AFFT*||J!%">
+              <field name="FIELDNAME">lamp2</field>
+            </block>
+          </value>
+        </block>
+      </next>
+    </block>
     <block xmlns="https://developers.google.com/blockly/xml" type="whenClicked" id="#k=E:#mJT7Yf_?_4cisH" x="-1110" y="-630">
       <mutation xmlns="http://www.w3.org/1999/xhtml" enableifmissed="false"></mutation>
       <value name="VALUE">
@@ -220,6 +236,15 @@
                   <field name="FIELDNAME">lamp3</field>
                 </block>
               </value>
+              <next>
+                <block type="show" id="@iD3;$m@iNSA+m}:4%J[">
+                  <value name="VALUE">
+                    <block type="groupList" id="k8.~7z}Eq$qhU-xWQOop">
+                      <field name="FIELDNAME">lamp1</field>
+                    </block>
+                  </value>
+                </block>
+              </next>
             </block>
           </next>
         </block>
@@ -247,6 +272,15 @@
                       <field name="FIELDNAME">lamp3</field>
                     </block>
                   </value>
+                  <next>
+                    <block type="hide" id=".b)?q3hWFIMx}:VFwrWt">
+                      <value name="VALUE">
+                        <block type="groupList" id="5wf0:hLi)M=Fb1CgeYXB">
+                          <field name="FIELDNAME">lamp1</field>
+                        </block>
+                      </value>
+                    </block>
+                  </next>
                 </block>
               </next>
             </block>
@@ -264,16 +298,25 @@
                 <block type="show" id="Z4*Zir2??g:s2Gz)C}0D">
                   <value name="VALUE">
                     <block type="groupList" id="x@cn$8cdxx1`athlxbE-">
-                      <field name="FIELDNAME">lamp2</field>
+                      <field name="FIELDNAME">lamp3</field>
                     </block>
                   </value>
                   <next>
-                    <block type="show" id="5r@dl]U?CToBGCg(fx/7">
+                    <block type="hide" id="+}@aw4I-d^+hd6WKfoof">
                       <value name="VALUE">
-                        <block type="groupList" id=":/S^7bIbMDhX]=[f47Py">
-                          <field name="FIELDNAME">lamp3</field>
+                        <block type="groupList" id=";/4!:#,/b0rHMKC!Z/v$">
+                          <field name="FIELDNAME">lamp2</field>
                         </block>
                       </value>
+                      <next>
+                        <block type="hide" id="apk8(06.j2`*_t~/2wcH">
+                          <value name="VALUE">
+                            <block type="groupList" id="aEotIeeR8fYm^.vYr}m-">
+                              <field name="FIELDNAME">lamp1</field>
+                            </block>
+                          </value>
+                        </block>
+                      </next>
                     </block>
                   </next>
                 </block>
@@ -673,7 +716,7 @@
         </block>
       </next>
     </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="20WhZF`V7R[9.lxcw=n," x="-1130" y="230">
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="20WhZF`V7R[9.lxcw=n," x="-1130" y="310">
       <mutation>
         <arg name="frame" varid="NLUlWtZaGs$9tHAp=RT6"/>
       </mutation>
