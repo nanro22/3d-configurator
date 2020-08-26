@@ -50,10 +50,10 @@ body {
 .ring-type-button {
     width: 64px;
     height: 64px;
-   position: relative;
+    position: relative;
     display: block;
     overflow: hidden;
-    border-radius: 5px;
+    border-radius: 50%;
     border-style: none;
     border: 1px solid #ccc;
     float: left;
