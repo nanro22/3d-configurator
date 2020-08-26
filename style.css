@@ -129,12 +129,12 @@ body {
     float: left;
     display: block;
     overflow: hidden;
-    font-family: Roboto;
+    font-family: Prompt;
     font-weight: normal;
     font-size: 14px;
     margin-top: 2px;
     margin-bottom: 10px;
-    font-family: Lobster;
+    font-family: Prompt;
 }
 
 .engrave-input-button {
@@ -150,7 +150,7 @@ body {
     height: auto;
     padding-left: 15px;
     margin-top: 5px;
-    font-family: Bellefair;
+    font-family: Prompt;
     font-size: 1.1em;
 }
 
@@ -193,10 +193,10 @@ body {
 .engrave-font-list {
     height: 26px;
     width: 100%;
-    font-family: Roboto;
+    font-family: Prompt;
     font-weight: normal;
     font-size: 14px;
-    font-family: Lobster;
+    font-family: Prompt;
 }
 
 .preloader-screen {
@@ -288,7 +288,7 @@ body {
     width: 120px;
     display: block;
     font-size: 26px;
-    font-family: Bellefair;
+    font-family: Prompt;
     text-align: center;
     line-height: 42px;
 }
