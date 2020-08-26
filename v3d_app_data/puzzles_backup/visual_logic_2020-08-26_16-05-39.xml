@@ -1,0 +1,1277 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="false" scrollx="1292.3659667968752" scrolly="844.5" scale="1">
+    <block xmlns="https://developers.google.com/blockly/xml" type="initSettings" id="XtmV2SF[F-3GtO[7jp6+" x="-1130" y="-610">
+      <field name="LOAD_COMP_ASSETS">FALSE</field>
+      <field name="FULLSCREEN">TRUE</field>
+      <field name="BKG_TRANSPARENCY">TRUE</field>
+      <field name="PRESERVE_DRAW_BUF">FALSE</field>
+      <field name="FADE_ANNOTATIONS">TRUE</field>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="loadFont" id="pBG2X7,x4!j0[K52vi|!" x="-790" y="-590">
+      <value name="URL">
+        <shadow type="text" id="^hgUaA}z%r]W}hOo8*eM">
+          <field name="TEXT">./fonts/Bellefair-Regular.ttf</field>
+        </shadow>
+      </value>
+      <value name="FONTFAMILY">
+        <shadow type="text" id="$.ez1x5#!k!VRLJ(t=i!">
+          <field name="TEXT">bellefair</field>
+        </shadow>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="setHTMLElemStyle" id="c34ws.2#,n^=j0pYi7[r" x="-790" y="-510">
+      <field name="PROPERTY">backgroundColor</field>
+      <field name="PARENT">TRUE</field>
+      <value name="VALUE">
+        <block type="text" id="JbFH`hu6wl=DD]M@OURk">
+          <field name="TEXT">#212121</field>
+        </block>
+      </value>
+      <value name="ID">
+        <block type="DOMObjectSelector" id="s11m(e(TXw)*!wtm25eH">
+          <field name="DOM_OBJECT">BODY</field>
+        </block>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="initPreloader" id="obuCD,*3ZIb4~P`FyHS;" x="-1130" y="-410">
+      <statement name="DO_START">
+        <block type="setHTMLElemStyle" id="jW66#OLV;yi,8zF6@FL!">
+          <field name="PROPERTY">display</field>
+          <field name="PARENT">TRUE</field>
+          <value name="VALUE">
+            <block type="text" id="K{Y:8KY~I+f{QMRaoh%B">
+              <field name="TEXT">block</field>
+            </block>
+          </value>
+          <value name="ID">
+            <block type="text" id="{EYnL2[qJ/N:R[L#6*hm">
+              <field name="TEXT">preloader_container</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+      <statement name="DO_PROGRESS">
+        <block type="setHTMLElemStyle" id="fa|pFlxLa6~[NoJ=g+x1">
+          <field name="PROPERTY">height</field>
+          <field name="PARENT">TRUE</field>
+          <value name="VALUE">
+            <block type="text_join" id="Jkf!)H9b}%=VmY[hRLB5">
+              <mutation items="2"/>
+              <value name="ADD0">
+                <block type="math_round" id="dKu$(6RKCWt!::4.!N?s">
+                  <field name="OP">ROUND</field>
+                  <value name="NUM">
+                    <shadow type="math_number" id="sB,X~kC7=K)+gg{N/)G;">
+                      <field name="NUM">2.5</field>
+                    </shadow>
+                    <block type="math_arithmetic" id="4x.1Tj8b72R,9Uclt9a4">
+                      <field name="OP">DIVIDE</field>
+                      <value name="A">
+                        <shadow type="math_number" id="bp[pHuBB(Y=Y/:CzJNu.">
+                          <field name="NUM">2</field>
+                        </shadow>
+                        <block type="percentage" id="v_om9R9W+t|I8.7)psRJ"/>
+                      </value>
+                      <value name="B">
+                        <shadow type="math_number" id="xm=X`Bq0/1?=`Iwo0iA_">
+                          <field name="NUM">1</field>
+                        </shadow>
+                      </value>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <value name="ADD1">
+                <block type="text" id="m#j:1uxKN}TUTTn{co$b">
+                  <field name="TEXT">%</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <value name="ID">
+            <block type="text" id="j^{81JY[$23p]L+xq?,D">
+              <field name="TEXT">preloader_color</field>
+            </block>
+          </value>
+          <next>
+            <block type="setHTMLElemAttribute" id="dwJ^KE$2i+#OR|lBh.Wr">
+              <field name="ATTRIBUTE">innerHTML</field>
+              <field name="PARENT">TRUE</field>
+              <value name="VALUE">
+                <block type="text_join" id="q^#g#6Mo[W$C#uAWLS$#">
+                  <mutation items="2"/>
+                  <value name="ADD0">
+                    <block type="math_round" id="n;:{Zc7HMBJ?C/-V%((G">
+                      <field name="OP">ROUND</field>
+                      <value name="NUM">
+                        <shadow type="math_number">
+                          <field name="NUM">2.5</field>
+                        </shadow>
+                        <block type="math_arithmetic" id="JK{-NB#bbk_gF~,,ln_+">
+                          <field name="OP">DIVIDE</field>
+                          <value name="A">
+                            <shadow type="math_number">
+                              <field name="NUM">2</field>
+                            </shadow>
+                            <block type="percentage" id="7Vm=%Az)A4(P_7vMZ#8#"/>
+                          </value>
+                          <value name="B">
+                            <shadow type="math_number" id="1-SY|8?#o]BTD6?v7a[B">
+                              <field name="NUM">1</field>
+                            </shadow>
+                          </value>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                  <value name="ADD1">
+                    <block type="text" id="PEzHpT?fBIv3y+}6LIZ%">
+                      <field name="TEXT">%</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <value name="ID">
+                <block type="text" id="BSFy}=h)n7~dg3Y`zFvi">
+                  <field name="TEXT">preloader_percentage</field>
+                </block>
+              </value>
+            </block>
+          </next>
+        </block>
+      </statement>
+      <statement name="DO_END">
+        <block type="setHTMLElemStyle" id="T_6N6]1Fs|f6oMr}s-xe">
+          <field name="PROPERTY">display</field>
+          <field name="PARENT">TRUE</field>
+          <value name="VALUE">
+            <block type="text" id="UQCc;_b9TNJvAEHfahOE">
+              <field name="TEXT">none</field>
+            </block>
+          </value>
+          <value name="ID">
+            <block type="text" id="L5CV+-`#oS(vVJ,4_%D;">
+              <field name="TEXT">preloader_screen</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <tab name="main" type="MainTab" active="true" scrollx="294.74810791015625" scrolly="273.99066162109375" scale="0.5568374181775593">
+    <variables xmlns="https://developers.google.com/blockly/xml">
+      <variable id="NLUlWtZaGs$9tHAp=RT6" type="">frame</variable>
+    </variables>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="FT9tc1K@WQ67MX(5gQZr" x="-410" y="-750">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <block type="text" id="4WG_qg3`NRW29x_2/w!h">
+          <field name="TEXT">button_route_on</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="show" id="WG9SWX``1ZT]Y,UR/$N-">
+          <value name="VALUE">
+            <block type="groupList" id="~M$N,LC36/I`SP2$oU,R">
+              <field name="FIELDNAME">route</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+      <next>
+        <block type="eventHTMLElem" id="HiEvuoKCx^LY0+=`BA2A">
+          <field name="EVENT">click</field>
+          <field name="PARENT">TRUE</field>
+          <value name="ID">
+            <block type="text" id="{}e%YdmLWn/em@/d-JYw">
+              <field name="TEXT">button_route_off</field>
+            </block>
+          </value>
+          <statement name="DO">
+            <block type="hide" id=",an6Jf-G5-PY@a[dqtJu">
+              <value name="VALUE">
+                <block type="groupList" id="zk9p1BOD_r5D5vQy;6V~">
+                  <field name="FIELDNAME">route</field>
+                </block>
+              </value>
+            </block>
+          </statement>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="zoomCameraToObject" id="9:Sr:xQU|]}{LNU.enM0" x="-1170" y="-670">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+      <value name="OBJECT">
+        <shadow type="objectList" id="AA)OMpiwAQZAK:3y%@Lm">
+          <field name="FIELDNAME">lift-4m</field>
+        </shadow>
+        <block type="groupList" id="ms[M/G=1R5+@o*?wc|.;">
+          <field name="FIELDNAME">lamp3</field>
+        </block>
+      </value>
+      <value name="DURATION">
+        <shadow type="math_number" id="*?i9E*vK|muv#8w[}DY#">
+          <field name="NUM">1</field>
+        </shadow>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="hide" id="qFsx?mBvRVYVydd}.{:;" x="-750" y="-650">
+      <value name="VALUE">
+        <block type="groupList" id="yJZM)3;4?9I=w+|;{}@P">
+          <field name="FIELDNAME">lamp1</field>
+        </block>
+      </value>
+      <next>
+        <block type="hide" id="^Y`q^Y[gCed/=TrGog[7">
+          <value name="VALUE">
+            <block type="groupList" id="cG*04Qh-:;AFFT*||J!%">
+              <field name="FIELDNAME">lamp2</field>
+            </block>
+          </value>
+          <next>
+            <block type="hide" id="Z}-bzL#AI1$GAiC`9C1_">
+              <value name="VALUE">
+                <block type="groupList" id="wHa=1Rp.sKf`=6415lZI">
+                  <field name="FIELDNAME">spots</field>
+                </block>
+              </value>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="sewxOACLOhfNN~G0rz6l" disabled="true" x="-310" y="-510">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <block type="text" id="pioQnQl$LZ`M@y?)q!3u">
+          <field name="TEXT">button_material_1</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="assignMaterial" id=")).x,wQhT`CXdD=4QX|L">
+          <value name="VALUE2">
+            <block type="materialList" id="Z(]22mPRt/eroI9hR_z@">
+              <field name="FIELDNAME">peinture brillan</field>
+            </block>
+          </value>
+          <value name="VALUE1">
+            <block type="groupList" id="7j?w.T{?J@SzQUAgo$|B">
+              <field name="FIELDNAME">lamp2</field>
+            </block>
+          </value>
+          <next>
+            <block type="assignMaterial" id="Q$hcs-sK%]3w[W7aK/D_">
+              <value name="VALUE2">
+                <block type="materialList" id="xE@Y+Rg_A{~n86Z+d`UO">
+                  <field name="FIELDNAME">peinture brillan</field>
+                </block>
+              </value>
+              <value name="VALUE1">
+                <block type="groupList" id="5*.~!Wa/.qOLJ#@yz(+P">
+                  <field name="FIELDNAME">lamp1</field>
+                </block>
+              </value>
+              <next>
+                <block type="assignMaterial" id="G1U18l%O_Nc=8rP-~u!_">
+                  <value name="VALUE2">
+                    <block type="materialList" id="N1E(-n0/yPH5]`{|gHH3">
+                      <field name="FIELDNAME">peinture brillan</field>
+                    </block>
+                  </value>
+                  <value name="VALUE1">
+                    <block type="groupList" id="|[rDPEnw+-S,rIrDcD{I">
+                      <field name="FIELDNAME">lamp3</field>
+                    </block>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+      <next>
+        <block type="eventHTMLElem" id="?-.juKaxk@]Q}inr4ikx" disabled="true">
+          <field name="EVENT">click</field>
+          <field name="PARENT">TRUE</field>
+          <value name="ID">
+            <block type="text" id="*IpBaVtg|Q3.Sf97i/yI">
+              <field name="TEXT">button_material_2</field>
+            </block>
+          </value>
+          <statement name="DO">
+            <block type="assignMaterial" id="JP.{hPLjtHsPgMu.i497">
+              <value name="VALUE2">
+                <block type="materialList" id="FVv=^PBi#nJR?h}:pgp#">
+                  <field name="FIELDNAME">peinture brillan.001</field>
+                </block>
+              </value>
+              <value name="VALUE1">
+                <block type="groupList" id="~__u`q*jn)RHT0kew.56">
+                  <field name="FIELDNAME">lamp2</field>
+                </block>
+              </value>
+              <next>
+                <block type="assignMaterial" id="O%/eC{l~$35;vR3T4@s-">
+                  <value name="VALUE2">
+                    <block type="materialList" id="6_fOPJk^*6(cjx=rwkQ`">
+                      <field name="FIELDNAME">peinture brillan.001</field>
+                    </block>
+                  </value>
+                  <value name="VALUE1">
+                    <block type="groupList" id="2JYt`xij_IamWAaEO~=@">
+                      <field name="FIELDNAME">lamp3</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="assignMaterial" id="e]hH:XzE,hn4(M,!CGQC">
+                      <value name="VALUE2">
+                        <block type="materialList" id="tR:::6gM)T@%tcyCBTkV">
+                          <field name="FIELDNAME">peinture brillan.001</field>
+                        </block>
+                      </value>
+                      <value name="VALUE1">
+                        <block type="groupList" id="O0VVE+Q~w^MB|FZi1ig*">
+                          <field name="FIELDNAME">lamp1</field>
+                        </block>
+                      </value>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </statement>
+          <next>
+            <block type="eventHTMLElem" id="7OO=l%D]*%R0BINraP%?" disabled="true">
+              <field name="EVENT">click</field>
+              <field name="PARENT">TRUE</field>
+              <value name="ID">
+                <block type="text" id="l.TsWsThM0-Foub9SDHS">
+                  <field name="TEXT">button_material_3</field>
+                </block>
+              </value>
+              <statement name="DO">
+                <block type="assignMaterial" id="UNT@-cI,*g?t8bc]fevh">
+                  <value name="VALUE2">
+                    <block type="materialList" id="Tp=F^gw^JnBQA^US5x4W">
+                      <field name="FIELDNAME">peinture brillan.002</field>
+                    </block>
+                  </value>
+                  <value name="VALUE1">
+                    <block type="groupList" id="~gKF%g@6xqX^9~8dwncB">
+                      <field name="FIELDNAME">lamp2</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="assignMaterial" id="qcb-lY:;1J~Th7zl^N-.">
+                      <value name="VALUE2">
+                        <block type="materialList" id="lTUL~kl7yPpBwXjY$Z^V">
+                          <field name="FIELDNAME">peinture brillan.002</field>
+                        </block>
+                      </value>
+                      <value name="VALUE1">
+                        <block type="groupList" id="r]HlNsxOOvW%7Opz`@%y">
+                          <field name="FIELDNAME">lamp1</field>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="assignMaterial" id="R=0}b:1$d16);6;[5uU:">
+                          <value name="VALUE2">
+                            <block type="materialList" id="vImAB/1*KcFxUsEou*F4">
+                              <field name="FIELDNAME">peinture brillan.002</field>
+                            </block>
+                          </value>
+                          <value name="VALUE1">
+                            <block type="groupList" id=")b6B;PlofK)Jje_s:taW">
+                              <field name="FIELDNAME">lamp3</field>
+                            </block>
+                          </value>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </statement>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="xgOhCxR_$4DOzdG+Nhg{" x="-1130" y="-430">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <block type="text" id="OL}wySvnaqA|,Z[QeOE5">
+          <field name="TEXT">button_nb_lamp_1</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="zoomCameraToObject" id="Hy+8:Ny._zMHBQ;2BK;{">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+          <value name="OBJECT">
+            <shadow type="objectList" id="=Y|X:vj6wdj?2QBUqYB]">
+              <field name="FIELDNAME">&lt;none&gt;</field>
+            </shadow>
+            <block type="groupList" id="=S)7*nRj55!Xj]FzO^Oa">
+              <field name="FIELDNAME">lamp1</field>
+            </block>
+          </value>
+          <value name="DURATION">
+            <shadow type="math_number" id="5]J(3X?BS64`oa$NKSdi">
+              <field name="NUM">3</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="hide" id="$/aAy}/n#RgBA)%6In*`">
+              <value name="VALUE">
+                <block type="groupList" id="W.`fc;UbTL{9jqEEmzN@">
+                  <field name="FIELDNAME">lamp2</field>
+                </block>
+              </value>
+              <next>
+                <block type="hide" id="V3V|S;Htnyd5++k:#Q;+">
+                  <value name="VALUE">
+                    <block type="groupList" id="$dCixEJiq)=-_z8q.~/@">
+                      <field name="FIELDNAME">lamp3</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="show" id="@iD3;$m@iNSA+m}:4%J[">
+                      <value name="VALUE">
+                        <block type="groupList" id="k8.~7z}Eq$qhU-xWQOop">
+                          <field name="FIELDNAME">lamp1</field>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="controls_if" id="_E#[za2V}Y(zRA;rP?8/">
+                          <value name="IF0">
+                            <block type="isObjectVisible" id="oSp08eOE*HPd1z#~$m[f">
+                              <value name="VALUE">
+                                <block type="groupList" id=".r(BK_-Gk$E`9V.J}_:j">
+                                  <field name="FIELDNAME">spots</field>
+                                </block>
+                              </value>
+                            </block>
+                          </value>
+                          <statement name="DO0">
+                            <block type="show" id="kLsm2]bd}qECnS4ZLsOZ">
+                              <value name="VALUE">
+                                <block type="objectList" id="Sy=j,fYHDw`V1lZy1n12">
+                                  <field name="FIELDNAME">Spot.1</field>
+                                </block>
+                              </value>
+                              <next>
+                                <block type="hide" id="NkERt=IL)1Vu((f={v@,">
+                                  <value name="VALUE">
+                                    <block type="objectList" id="Q7Vujz(8z$Hb_?!BAESD">
+                                      <field name="FIELDNAME">Spot.2</field>
+                                    </block>
+                                  </value>
+                                  <next>
+                                    <block type="hide" id="jXq,d?/^0IP8QWO]M^EZ">
+                                      <value name="VALUE">
+                                        <block type="objectList" id="AaY*|Sp=ADy1F7+`PGt.">
+                                          <field name="FIELDNAME">Spot.3</field>
+                                        </block>
+                                      </value>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </statement>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+      <next>
+        <block type="eventHTMLElem" id="fK5K2X`/SHBt(o5G!GcW">
+          <field name="EVENT">click</field>
+          <field name="PARENT">TRUE</field>
+          <value name="ID">
+            <block type="text" id="[HNZ.oE19q@#MSJF7]Sx">
+              <field name="TEXT">button_nb_lamp_2</field>
+            </block>
+          </value>
+          <statement name="DO">
+            <block type="zoomCameraToObject" id="kPt[$DcMVl:O,Jg~!h3*">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+              <value name="OBJECT">
+                <shadow type="objectList">
+                  <field name="FIELDNAME">&lt;none&gt;</field>
+                </shadow>
+                <block type="groupList" id="XZNDH.RqxBJo`ki)_o{^">
+                  <field name="FIELDNAME">lamp2</field>
+                </block>
+              </value>
+              <value name="DURATION">
+                <shadow type="math_number" id=";SA[|z^6WHZt%DKISsZI">
+                  <field name="NUM">3</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="show" id="~$}~*LIj/RjnAtc$Q6.T">
+                  <value name="VALUE">
+                    <block type="groupList" id="m[L_%4k^@@qb,.v:zcXn">
+                      <field name="FIELDNAME">lamp2</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="hide" id="~TO)c!nRBfH-5]=iX-`U">
+                      <value name="VALUE">
+                        <block type="groupList" id="*yq{uT8HF5;bjIL044Ps">
+                          <field name="FIELDNAME">lamp3</field>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="hide" id=".b)?q3hWFIMx}:VFwrWt">
+                          <value name="VALUE">
+                            <block type="groupList" id="5wf0:hLi)M=Fb1CgeYXB">
+                              <field name="FIELDNAME">lamp1</field>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="controls_if" id="rIvMr31j{7V7;M/wz]W5">
+                              <value name="IF0">
+                                <block type="isObjectVisible" id="`GhG9ci4/[i2S*[xsr3r">
+                                  <value name="VALUE">
+                                    <block type="groupList" id="`s@Ph*_X,EEpxGgt+vA1">
+                                      <field name="FIELDNAME">spots</field>
+                                    </block>
+                                  </value>
+                                </block>
+                              </value>
+                              <statement name="DO0">
+                                <block type="show" id="fv:)%3K0SM*eXCzDH4Mc">
+                                  <value name="VALUE">
+                                    <block type="objectList" id="e`P!5qdGK)p4P!q2]U@T">
+                                      <field name="FIELDNAME">Spot.2</field>
+                                    </block>
+                                  </value>
+                                  <next>
+                                    <block type="hide" id="/as7{Jz^@@^iBo`h|MAa">
+                                      <value name="VALUE">
+                                        <block type="objectList" id="Gl4/mES,C-@(Gc1|I,uq">
+                                          <field name="FIELDNAME">Spot.1</field>
+                                        </block>
+                                      </value>
+                                      <next>
+                                        <block type="hide" id="Q3_KCsDVc}so+.0qdInz">
+                                          <value name="VALUE">
+                                            <block type="objectList" id="sNM1eDf;t0^Y2$UAF6J~">
+                                              <field name="FIELDNAME">Spot.3</field>
+                                            </block>
+                                          </value>
+                                        </block>
+                                      </next>
+                                    </block>
+                                  </next>
+                                </block>
+                              </statement>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </statement>
+          <next>
+            <block type="eventHTMLElem" id="ct9O8)on.CGduX#bpBAR">
+              <field name="EVENT">click</field>
+              <field name="PARENT">TRUE</field>
+              <value name="ID">
+                <block type="text" id=",JsC1Z.UFb};]+w%-]K+">
+                  <field name="TEXT">button_nb_lamp_3</field>
+                </block>
+              </value>
+              <statement name="DO">
+                <block type="zoomCameraToObject" id="-hQzYpAqKNIO.ejt45^J">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+                  <value name="OBJECT">
+                    <shadow type="objectList">
+                      <field name="FIELDNAME">&lt;none&gt;</field>
+                    </shadow>
+                    <block type="groupList" id="C{,%Q$*[rCDQB|d?Lzax">
+                      <field name="FIELDNAME">lamp3</field>
+                    </block>
+                  </value>
+                  <value name="DURATION">
+                    <shadow type="math_number" id="^FEZx~VpOoJh|-O${`#~">
+                      <field name="NUM">3</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="show" id="Z4*Zir2??g:s2Gz)C}0D">
+                      <value name="VALUE">
+                        <block type="groupList" id="x@cn$8cdxx1`athlxbE-">
+                          <field name="FIELDNAME">lamp3</field>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="hide" id="+}@aw4I-d^+hd6WKfoof">
+                          <value name="VALUE">
+                            <block type="groupList" id=";/4!:#,/b0rHMKC!Z/v$">
+                              <field name="FIELDNAME">lamp2</field>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="hide" id="apk8(06.j2`*_t~/2wcH">
+                              <value name="VALUE">
+                                <block type="groupList" id="aEotIeeR8fYm^.vYr}m-">
+                                  <field name="FIELDNAME">lamp1</field>
+                                </block>
+                              </value>
+                              <next>
+                                <block type="controls_if" id="d;t*]s({H9PBfg[`@wt*">
+                                  <value name="IF0">
+                                    <block type="isObjectVisible" id=":{LYFIA;$n-QQ.7-wlm|">
+                                      <value name="VALUE">
+                                        <block type="groupList" id="]q+?Sr3qM?]ZtBI=jq^x">
+                                          <field name="FIELDNAME">spots</field>
+                                        </block>
+                                      </value>
+                                    </block>
+                                  </value>
+                                  <statement name="DO0">
+                                    <block type="show" id="Z/}%rF{!o#,P!6[)HI:%">
+                                      <value name="VALUE">
+                                        <block type="objectList" id="e2D{e2an|xQjeaR$j;2q">
+                                          <field name="FIELDNAME">Spot.3</field>
+                                        </block>
+                                      </value>
+                                      <next>
+                                        <block type="hide" id="fo$y|eaYa_bbR~Eexd%5">
+                                          <value name="VALUE">
+                                            <block type="objectList" id="/Jn*NaCRpO~J/n^FQ1*r">
+                                              <field name="FIELDNAME">Spot.2</field>
+                                            </block>
+                                          </value>
+                                          <next>
+                                            <block type="hide" id="}8h[U1WyzSyFL$9WsQ6v">
+                                              <value name="VALUE">
+                                                <block type="objectList" id="^k}ndI!3z5$uejj`Y:T.">
+                                                  <field name="FIELDNAME">Spot.1</field>
+                                                </block>
+                                              </value>
+                                            </block>
+                                          </next>
+                                        </block>
+                                      </next>
+                                    </block>
+                                  </statement>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </statement>
+              <next>
+                <block type="eventHTMLElem" id="X|wVxYu-*GHkGY;`06P6">
+                  <field name="EVENT">click</field>
+                  <field name="PARENT">TRUE</field>
+                  <value name="ID">
+                    <block type="text" id="QnWl;6rU-#al*Ql)CTGE">
+                      <field name="TEXT">button_curve_0</field>
+                    </block>
+                  </value>
+                  <statement name="DO">
+                    <block type="procedures_callnoreturn" id="bO(F5*P5*lZjk?5HAJa@">
+                      <mutation name="do_inclinaison">
+                        <arg name="frame"/>
+                      </mutation>
+                      <value name="ARG0">
+                        <block type="math_number" id="8oVb{@!fiK@YGE4_8Q0!">
+                          <field name="NUM">30</field>
+                        </block>
+                      </value>
+                    </block>
+                  </statement>
+                  <next>
+                    <block type="eventHTMLElem" id="csnV;*/]{[yYvpJaWyTg">
+                      <field name="EVENT">click</field>
+                      <field name="PARENT">TRUE</field>
+                      <value name="ID">
+                        <block type="text" id=".A}ZOY!2HrQ+E$Nm!)]5">
+                          <field name="TEXT">button_curve_1</field>
+                        </block>
+                      </value>
+                      <statement name="DO">
+                        <block type="procedures_callnoreturn" id="=eGk`|d{ubb,4{=B4DU_">
+                          <mutation name="do_inclinaison">
+                            <arg name="frame"/>
+                          </mutation>
+                          <value name="ARG0">
+                            <block type="math_number" id="K]PQ6siJ,PV9z4~SpOj3">
+                              <field name="NUM">15</field>
+                            </block>
+                          </value>
+                        </block>
+                      </statement>
+                      <next>
+                        <block type="eventHTMLElem" id="Hb^G[oF$EV5]vK`B5N6:">
+                          <field name="EVENT">click</field>
+                          <field name="PARENT">TRUE</field>
+                          <value name="ID">
+                            <block type="text" id="0dPPWPiA(.5BUEE9sy$d">
+                              <field name="TEXT">button_curve_2</field>
+                            </block>
+                          </value>
+                          <statement name="DO">
+                            <block type="procedures_callnoreturn" id="Q*Ge.[PhL7gpg~*J?[U*">
+                              <mutation name="do_inclinaison">
+                                <arg name="frame"/>
+                              </mutation>
+                              <value name="ARG0">
+                                <block type="math_number" id="g3.,Il{(*QshiT2-W7aC">
+                                  <field name="NUM">0</field>
+                                </block>
+                              </value>
+                            </block>
+                          </statement>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="F|0p)xSkXA6COtGXRCW%" x="290" y="-470">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <block type="text" id="%sig,CK#SiBL}ZoWrjNU">
+          <field name="TEXT">button_material_1</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="replaceTexture" id="`0?cRl_L+^A,GH/)88jg">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false"></mutation>
+          <field name="OLD_TEX_NAME">chrome_BaseColor.png</field>
+          <value name="MATERIAL">
+            <block type="materialList" id="Qjco~|T-cZ/?sam9+?gB">
+              <field name="FIELDNAME">peinture brillan</field>
+            </block>
+          </value>
+          <value name="NEW_TEX_URL">
+            <shadow type="text" id="uu2MlA*aKR=g,h~M^z+}">
+              <field name="TEXT">./noir_basecolor.png</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="replaceTexture" id="ww$r17HvHYnou!er1%B3">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false"></mutation>
+              <field name="OLD_TEX_NAME">chrome_Normal.png</field>
+              <value name="MATERIAL">
+                <block type="materialList" id="zbIC-n,zj-B_ht1Mb/im">
+                  <field name="FIELDNAME">peinture brillan</field>
+                </block>
+              </value>
+              <value name="NEW_TEX_URL">
+                <shadow type="text" id="pF(1=7GQ[QHwa:1RYkML">
+                  <field name="TEXT">./noir_Normal.png</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="replaceTexture" id="P6n+S_vwkTx$W59zX~#@">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false"></mutation>
+                  <field name="OLD_TEX_NAME">chrome_OcclusionRoughnessMetallic.png</field>
+                  <value name="MATERIAL">
+                    <block type="materialList" id="]Lao.);MkNESr-8_d+N7">
+                      <field name="FIELDNAME">peinture brillan</field>
+                    </block>
+                  </value>
+                  <value name="NEW_TEX_URL">
+                    <shadow type="text" id="FY2zHjZwG}r-_x[u@_x0">
+                      <field name="TEXT">noir_OcclusionRoughnessMetallic.png</field>
+                    </shadow>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+      <next>
+        <block type="eventHTMLElem" id="i:%mP+PRghWe+zkXM3lT">
+          <field name="EVENT">click</field>
+          <field name="PARENT">TRUE</field>
+          <value name="ID">
+            <block type="text" id="gLrQS.bhzq#Y{.oF*c]5">
+              <field name="TEXT">button_material_2</field>
+            </block>
+          </value>
+          <statement name="DO">
+            <block type="replaceTexture" id="AZJXMT(|Q6|R9WX*%L%.">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false"></mutation>
+              <field name="OLD_TEX_NAME">chrome_BaseColor.png</field>
+              <value name="MATERIAL">
+                <block type="materialList" id="o]tzb2aZPwr`q)G:Gs;,">
+                  <field name="FIELDNAME">peinture brillan</field>
+                </block>
+              </value>
+              <value name="NEW_TEX_URL">
+                <shadow type="text" id="n6t,Vs+:[@-U]%CbK,T#">
+                  <field name="TEXT">steel_BaseColor.png</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="replaceTexture" id="qs:{ZjPky?)EvE)*Yup}">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false"></mutation>
+                  <field name="OLD_TEX_NAME">chrome_Normal.png</field>
+                  <value name="MATERIAL">
+                    <block type="materialList" id="@RaQrPBE~xRZPsjJZ#b$">
+                      <field name="FIELDNAME">peinture brillan</field>
+                    </block>
+                  </value>
+                  <value name="NEW_TEX_URL">
+                    <shadow type="text" id="DlVC{h;~k9S7V^iGKE;[">
+                      <field name="TEXT">steel_Normal.png</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="replaceTexture" id="G5s*hOB{ilzLQO*?691]">
+                      <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false"></mutation>
+                      <field name="OLD_TEX_NAME">chrome_OcclusionRoughnessMetallic.png</field>
+                      <value name="MATERIAL">
+                        <block type="materialList" id="i`ie`.*#$RZ~96qphkuz">
+                          <field name="FIELDNAME">peinture brillan</field>
+                        </block>
+                      </value>
+                      <value name="NEW_TEX_URL">
+                        <shadow type="text" id="on6jRPd.9{4C;kz|Igx7">
+                          <field name="TEXT">steel_OcclusionRoughnessMetallic.png</field>
+                        </shadow>
+                      </value>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </statement>
+          <next>
+            <block type="eventHTMLElem" id="+]9}9%a67N3)N%9[o%Fg">
+              <field name="EVENT">click</field>
+              <field name="PARENT">TRUE</field>
+              <value name="ID">
+                <block type="text" id=";H:({@p!@8E2oR7`-6it">
+                  <field name="TEXT">button_material_3</field>
+                </block>
+              </value>
+              <statement name="DO">
+                <block type="replaceTexture" id=")w6dC6EbS.,A(Vs}h%G2">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false"></mutation>
+                  <field name="OLD_TEX_NAME">chrome_BaseColor.png</field>
+                  <value name="MATERIAL">
+                    <block type="materialList" id="hqUUl[!HTWB:l|+BBnps">
+                      <field name="FIELDNAME">peinture brillan</field>
+                    </block>
+                  </value>
+                  <value name="NEW_TEX_URL">
+                    <shadow type="text" id="+^Azf!:!94[ETH)gvcQA">
+                      <field name="TEXT">chrome_BaseColor.png</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="replaceTexture" id="(`3FL,^Q|CU4@sdeWHuv">
+                      <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false"></mutation>
+                      <field name="OLD_TEX_NAME">chrome_Normal.png</field>
+                      <value name="MATERIAL">
+                        <block type="materialList" id="`iD5gAr*w2#SDBlg}H6n">
+                          <field name="FIELDNAME">peinture brillan</field>
+                        </block>
+                      </value>
+                      <value name="NEW_TEX_URL">
+                        <shadow type="text" id="rfv15+8jC_Y|X;uDmY,n">
+                          <field name="TEXT">chrome_Normal.png</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="replaceTexture" id="hpf(Vy^?=T^SqoHTCkG?">
+                          <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false"></mutation>
+                          <field name="OLD_TEX_NAME">chrome_OcclusionRoughnessMetallic.png</field>
+                          <value name="MATERIAL">
+                            <block type="materialList" id="SNnisp5@yj?R2i.%USER">
+                              <field name="FIELDNAME">peinture brillan</field>
+                            </block>
+                          </value>
+                          <value name="NEW_TEX_URL">
+                            <shadow type="text" id="8k0!+v}yuWHN(~lE/{Iz">
+                              <field name="TEXT">chrome_OcclusionRoughnessMetallic.png</field>
+                            </shadow>
+                          </value>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </statement>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="/!vB;,O^Ufl,agft5/(H" x="-510" y="130">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <block type="text" id="]IoZ2a)yRO1e@;WPK2j)">
+          <field name="TEXT">button_jour</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="hide" id="L8M)g4lA}C-y:j2oKpRr">
+          <value name="VALUE">
+            <block type="groupList" id="(y)6r`zfO]Ew9Ox`En(a">
+              <field name="FIELDNAME">spots</field>
+            </block>
+          </value>
+          <next>
+            <block type="show" id="yT9-E9,Wb@y+^D_l~rJ{">
+              <value name="VALUE">
+                <block type="groupList" id="]d)8swC*Y,i`Bebzz8m:">
+                  <field name="FIELDNAME">sun</field>
+                </block>
+              </value>
+            </block>
+          </next>
+        </block>
+      </statement>
+      <next>
+        <block type="eventHTMLElem" id="w_`HA`)NusYbd3MUqIZ~">
+          <field name="EVENT">click</field>
+          <field name="PARENT">TRUE</field>
+          <value name="ID">
+            <block type="text" id=";,1$H;Wk}rLcq$Jr+)eZ">
+              <field name="TEXT">button_nuit</field>
+            </block>
+          </value>
+          <statement name="DO">
+            <block type="hide" id="84@S{$q/,sK+4`aEgR+%">
+              <value name="VALUE">
+                <block type="groupList" id="%Me7A;%%=RSvQ6mKc}dD">
+                  <field name="FIELDNAME">sun</field>
+                </block>
+              </value>
+              <next>
+                <block type="show" id="[t?VPC)SQbx.Y}{]zqk(">
+                  <value name="VALUE">
+                    <block type="groupList" id="rk`zD*r{++L4+hw;P.=_">
+                      <field name="FIELDNAME">spots</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="controls_ifelse" id="^zKQ@-i.%~Q8dB3]eQO*">
+                      <value name="IF0">
+                        <block type="isObjectVisible" id="E;)zV0y@HLi.#s,5#Qp7">
+                          <value name="VALUE">
+                            <block type="groupList" id="qt^bTpXOy?08q+uzN`ID">
+                              <field name="FIELDNAME">lamp2</field>
+                            </block>
+                          </value>
+                        </block>
+                      </value>
+                      <statement name="DO0">
+                        <block type="show" id="JY2l]h]9Rg~##2uRImJe">
+                          <value name="VALUE">
+                            <block type="objectList" id="xyyixt+rMF/r+E$t0F0b">
+                              <field name="FIELDNAME">Spot.2</field>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="hide" id="?Yt,iamO.okWAn0q!FM|">
+                              <value name="VALUE">
+                                <block type="objectList" id="bE*9=^c{n+KCr@OLpkxk">
+                                  <field name="FIELDNAME">Spot.1</field>
+                                </block>
+                              </value>
+                              <next>
+                                <block type="hide" id="Vdm-(SMJ|nb|hak.oLhc">
+                                  <value name="VALUE">
+                                    <block type="objectList" id="PZn|$C4AKeln.q*.{pR}">
+                                      <field name="FIELDNAME">Spot.3</field>
+                                    </block>
+                                  </value>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </statement>
+                      <statement name="ELSE">
+                        <block type="hide" id="]^U:eMRxc!`tRzlSlRm^">
+                          <value name="VALUE">
+                            <block type="objectList" id="oIEBl@_dxY0;g~LNJ[,k">
+                              <field name="FIELDNAME">Spot.2</field>
+                            </block>
+                          </value>
+                        </block>
+                      </statement>
+                      <next>
+                        <block type="controls_ifelse" id="2_:)c%INSl9HFh*YMn9C">
+                          <value name="IF0">
+                            <block type="isObjectVisible" id="S$`Em-=EX^S+%KyqJ;8p">
+                              <value name="VALUE">
+                                <block type="groupList" id="czUnD^K6i`hV(XIs4_t/">
+                                  <field name="FIELDNAME">lamp1</field>
+                                </block>
+                              </value>
+                            </block>
+                          </value>
+                          <statement name="DO0">
+                            <block type="show" id="L*=;v-jNXbbUfq87X@Gt">
+                              <value name="VALUE">
+                                <block type="objectList" id="#pr!l;f*wRH$9KDv.pmd">
+                                  <field name="FIELDNAME">Spot.1</field>
+                                </block>
+                              </value>
+                              <next>
+                                <block type="hide" id="l[|b+iLpAA-Jg(5MOPQW">
+                                  <value name="VALUE">
+                                    <block type="objectList" id="4m9Q:L%?cB6U1-R*kgUb">
+                                      <field name="FIELDNAME">Spot.2</field>
+                                    </block>
+                                  </value>
+                                  <next>
+                                    <block type="hide" id="?rN||VX1uP])pErxS!iq">
+                                      <value name="VALUE">
+                                        <block type="objectList" id="{MP~;uqgruf^BsY[;rsY">
+                                          <field name="FIELDNAME">Spot.3</field>
+                                        </block>
+                                      </value>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </statement>
+                          <statement name="ELSE">
+                            <block type="hide" id="o+i{d%}*g35m.eN4,tUR">
+                              <value name="VALUE">
+                                <block type="objectList" id="etUQsaNPx]IyZ3E2)pKq">
+                                  <field name="FIELDNAME">Spot.1</field>
+                                </block>
+                              </value>
+                            </block>
+                          </statement>
+                          <next>
+                            <block type="controls_ifelse" id="EstZ#~b^Zh%Hyxa}f%$=">
+                              <value name="IF0">
+                                <block type="isObjectVisible" id="F4qCOJ`dG{Afj|prdE7W">
+                                  <value name="VALUE">
+                                    <block type="groupList" id="7IxuV$)jQ)7JETecH#*,">
+                                      <field name="FIELDNAME">lamp3</field>
+                                    </block>
+                                  </value>
+                                </block>
+                              </value>
+                              <statement name="DO0">
+                                <block type="show" id="sXrq]y(_FzcJ-@j|.2p1">
+                                  <value name="VALUE">
+                                    <block type="objectList" id="F5-QLz+p4!zm2Wld$W[U">
+                                      <field name="FIELDNAME">Spot.3</field>
+                                    </block>
+                                  </value>
+                                  <next>
+                                    <block type="hide" id="foG{XIDKh+(lq*)uAU|A">
+                                      <value name="VALUE">
+                                        <block type="objectList" id="V38_n,AF8eqs9|^W(N6f">
+                                          <field name="FIELDNAME">Spot.1</field>
+                                        </block>
+                                      </value>
+                                      <next>
+                                        <block type="hide" id="]lvBF/=UGu*T2@6^}[iH">
+                                          <value name="VALUE">
+                                            <block type="objectList" id="xlEeLS)$!yAUyHPBszwe">
+                                              <field name="FIELDNAME">Spot.2</field>
+                                            </block>
+                                          </value>
+                                        </block>
+                                      </next>
+                                    </block>
+                                  </next>
+                                </block>
+                              </statement>
+                              <statement name="ELSE">
+                                <block type="hide" id="S?R!W^`Xbi3{I/]1.6~:">
+                                  <value name="VALUE">
+                                    <block type="objectList" id="jsQHyUGQ@PVY0sx},{M?">
+                                      <field name="FIELDNAME">Spot.3</field>
+                                    </block>
+                                  </value>
+                                </block>
+                              </statement>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </statement>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="ssaoAdv" id="|*={K^2+yF=V,f0,OEzX" x="70" y="170">
+      <value name="RADIUS">
+        <shadow type="number_slider" id="h9wBx-Y4|NH=o-t=4:u4">
+          <field name="NUM" min="0" max="10" step="0.1">0.1</field>
+        </shadow>
+      </value>
+      <value name="MIN_DIST">
+        <shadow type="number_slider" id="b+E;N_r-wd!of)rZgVtK">
+          <field name="NUM" min="0.001" max="0.01" step="0.001">0.005</field>
+        </shadow>
+      </value>
+      <value name="MAX_DIST">
+        <shadow type="number_slider" id="Wk)}=kgF)Z^GqZ{N%oIa">
+          <field name="NUM" min="0" max="10" step="0.1">0.1</field>
+        </shadow>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="createEnvironment" id="C+EG*kio3[*oo]$~no,O" x="110" y="330">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" oncereadydoslot="false"></mutation>
+      <field name="TYPE">BACKGROUND_COLOR</field>
+      <value name="NAME">
+        <shadow type="text" id="%QuEB84-)7RfPf9DYc$M">
+          <field name="TEXT">test1</field>
+        </shadow>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="20WhZF`V7R[9.lxcw=n," x="-1130" y="830">
+      <mutation>
+        <arg name="frame" varid="NLUlWtZaGs$9tHAp=RT6"/>
+      </mutation>
+      <field name="NAME">do_inclinaison</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="setAnimationFrame" id="M4K7l#j!d9wAvrAc@_iO">
+          <value name="VALUE">
+            <block type="getAnimations" id="l`4}siijcT#DGE|_nREL">
+              <value name="OBJECTINPUT">
+                <block type="objectList" id="%,(o-8xm8c[=GYs(/@us">
+                  <field name="FIELDNAME">T70x10L201.002</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <value name="FROM">
+            <block type="variables_get" id="VrD27B2n4}W?PLtwB~Vt">
+              <field name="VAR" id="NLUlWtZaGs$9tHAp=RT6">frame</field>
+            </block>
+          </value>
+          <next>
+            <block type="setAnimationFrame" id="^hTjF}BVxi]Sv_eKEmJx">
+              <value name="VALUE">
+                <block type="getAnimations" id=")29,+28i_2`=$,EOdBGI">
+                  <value name="OBJECTINPUT">
+                    <block type="objectList" id="=cKR]56@fdN/ZH65zs_8">
+                      <field name="FIELDNAME">T70x10L201.001</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <value name="FROM">
+                <block type="variables_get" id="rX$NbeU;bOfk,+5-(CMA">
+                  <field name="VAR" id="NLUlWtZaGs$9tHAp=RT6">frame</field>
+                </block>
+              </value>
+              <next>
+                <block type="setAnimationFrame" id="]-.ilF`2H$SY;UxW1*}Z">
+                  <value name="VALUE">
+                    <block type="getAnimations" id="=TsG7r.)kA,74idhr1^,">
+                      <value name="OBJECTINPUT">
+                        <block type="objectList" id="FsjU$Q_R_NE`,QI5sr)e">
+                          <field name="FIELDNAME">T70x10L201.003</field>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                  <value name="FROM">
+                    <block type="variables_get" id="+]F!.@?JTqze}uYsH#$i">
+                      <field name="VAR" id="NLUlWtZaGs$9tHAp=RT6">frame</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="setAnimationFrame" id="|8@9|x%{DM+?#)91+N}k">
+                      <value name="VALUE">
+                        <block type="getAnimations" id="]5!,+h_/;p2)Iis!bdur">
+                          <value name="OBJECTINPUT">
+                            <block type="objectList" id="lVB#jz,0JoNY!Quim5r7">
+                              <field name="FIELDNAME">Spot.1</field>
+                            </block>
+                          </value>
+                        </block>
+                      </value>
+                      <value name="FROM">
+                        <block type="variables_get" id="+JZwed_yIz,;y/9TAobR">
+                          <field name="VAR" id="NLUlWtZaGs$9tHAp=RT6">frame</field>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="setAnimationFrame" id="yjkcdt/S^N^9QVzqYvzV">
+                          <value name="VALUE">
+                            <block type="getAnimations" id="Y6,8$S7^HJw/$robd/zv">
+                              <value name="OBJECTINPUT">
+                                <block type="objectList" id="%+S;K)jSfk+kL7|XemZX">
+                                  <field name="FIELDNAME">Spot.2</field>
+                                </block>
+                              </value>
+                            </block>
+                          </value>
+                          <value name="FROM">
+                            <block type="variables_get" id="gfFk8,1ijGqusN70X*F~">
+                              <field name="VAR" id="NLUlWtZaGs$9tHAp=RT6">frame</field>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="setAnimationFrame" id="WL{Y?cPM9MM(4U)a?1x)">
+                              <value name="VALUE">
+                                <block type="getAnimations" id="_y)Iu~H[)(Ta@=3T^QL;">
+                                  <value name="OBJECTINPUT">
+                                    <block type="objectList" id="0Ox+yl#jm#n%-YHJv`Z$">
+                                      <field name="FIELDNAME">Spot.3</field>
+                                    </block>
+                                  </value>
+                                </block>
+                              </value>
+                              <value name="FROM">
+                                <block type="variables_get" id="ZN@-+R}si|xgC9CSD]Jl">
+                                  <field name="VAR" id="NLUlWtZaGs$9tHAp=RT6">frame</field>
+                                </block>
+                              </value>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <editorsettings viewport-x="1415" viewport-y="194" viewport-w="960" viewport-h="604" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>
