@@ -158,7 +158,7 @@
       </statement>
     </block>
   </tab>
-  <tab name="main" type="MainTab" active="true" scrollx="929.565673828125" scrolly="346.78440856933594" scale="0.3918911516733128">
+  <tab name="main" type="MainTab" active="true" scrollx="900.5928955078125" scrolly="448.2451477050781" scale="0.3918911516733128">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="NLUlWtZaGs$9tHAp=RT6" type="">frame</variable>
     </variables>
@@ -1215,7 +1215,7 @@
         </block>
       </next>
     </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="ssaoAdv" id="|*={K^2+yF=V,f0,OEzX" x="90" y="250">
+    <block xmlns="https://developers.google.com/blockly/xml" type="ssaoAdv" id="|*={K^2+yF=V,f0,OEzX" x="190" y="190">
       <value name="RADIUS">
         <shadow type="number_slider" id="h9wBx-Y4|NH=o-t=4:u4">
           <field name="NUM" min="0" max="10" step="0.1">0.1</field>
@@ -1391,5 +1391,5 @@
       </statement>
     </block>
   </tab>
-  <editorsettings viewport-x="1832" viewport-y="194" viewport-w="960" viewport-h="604" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+  <editorsettings viewport-x="1708" viewport-y="156" viewport-w="960" viewport-h="621" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
 </xml>
