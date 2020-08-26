@@ -50,16 +50,48 @@ body {
 .ring-type-button {
     width: 64px;
     height: 64px;
-   position: relative;
+    position: relative;
     display: block;
     overflow: hidden;
-    border-radius: 5px;
+    border-radius: 50%;
     border-style: none;
     border: 1px solid #ccc;
     float: left;
     cursor: pointer;
     background-size: contain;
     margin: 2px;
+
+}
+.ring-type-button-sun {
+  width: 64px;
+  height: 64px;
+  background: url('./media/soleil.png');
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-radius: 50%;
+  border-style: none;
+  border: 1px solid #ccc;
+  float: left;
+  cursor: pointer;
+  background-size: contain;
+  margin: 2px;
+
+}
+.ring-type-button-night {
+  width: 64px;
+  height: 64px;
+  background: url('./media/lune.png');
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-radius: 50%;
+  border-style: none;
+  border: 1px solid #ccc;
+  float: left;
+  cursor: pointer;
+  background-size: contain;
+  margin: 2px;
 
 }
 .ring-type-button span{
@@ -76,7 +108,6 @@ body {
 
 .ring-button-selected {
     border: 1px solid #ff6800;
-    background:#efdac5;
 }
 
 .engrave-div {
@@ -371,13 +402,13 @@ body {
 }
 
 @font-face {
-    font-family: 'Roboto';
-    src: url('./fonts/Roboto-Regular.ttf');
+    font-family: 'Prompt';
+    src: url('./fonts/Prompt-Regular.ttf');
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Bellefair';
-    src: url('./fonts/Bellefair-Regular.ttf');
+    font-family: 'Prompt';
+    src: url('./fonts/Prompt-Regular.ttf');
     font-style: normal;
 }
