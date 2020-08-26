@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <tab name="init" type="InitTab" active="false" scrollx="1292.3659667968752" scrolly="844.5" scale="1">
+  <tab name="init" type="InitTab" active="false" scrollx="1292.365966796875" scrolly="844.5" scale="1">
     <block xmlns="https://developers.google.com/blockly/xml" type="initSettings" id="XtmV2SF[F-3GtO[7jp6+" x="-1130" y="-610">
       <field name="LOAD_COMP_ASSETS">FALSE</field>
       <field name="FULLSCREEN">TRUE</field>
@@ -158,7 +158,7 @@
       </statement>
     </block>
   </tab>
-  <tab name="main" type="MainTab" active="true" scrollx="1381.166015625" scrolly="838.1663208007812" scale="1">
+  <tab name="main" type="MainTab" active="true" scrollx="185.93490600585938" scrolly="164.4676055908203" scale="1">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="NLUlWtZaGs$9tHAp=RT6" type="">frame</variable>
     </variables>
@@ -199,22 +199,6 @@
           </statement>
         </block>
       </next>
-    </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="zoomCameraToObject" id="9:Sr:xQU|]}{LNU.enM0" x="-1170" y="-670">
-      <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
-      <value name="OBJECT">
-        <shadow type="objectList" id="AA)OMpiwAQZAK:3y%@Lm">
-          <field name="FIELDNAME">lift-4m</field>
-        </shadow>
-        <block type="groupList" id="ms[M/G=1R5+@o*?wc|.;">
-          <field name="FIELDNAME">lamp3</field>
-        </block>
-      </value>
-      <value name="DURATION">
-        <shadow type="math_number" id="*?i9E*vK|muv#8w[}DY#">
-          <field name="NUM">1</field>
-        </shadow>
-      </value>
     </block>
     <block xmlns="https://developers.google.com/blockly/xml" type="hide" id="qFsx?mBvRVYVydd}.{:;" x="-750" y="-650">
       <value name="VALUE">
@@ -1148,6 +1132,31 @@
         </shadow>
       </value>
     </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="createEnvironment" id="{o%/||HNL|F8OwtTVW[m" x="50" y="330">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" oncereadydoslot="true"></mutation>
+      <field name="TYPE">BACKGROUND_TEXTURE</field>
+      <value name="NAME">
+        <shadow type="text" id="fUhS|kMPGCmOUxtj%3hY">
+          <field name="TEXT">HDR</field>
+        </shadow>
+      </value>
+      <statement name="ONCE_READY_DO">
+        <block type="replaceTexture" id="452z/Tx/8%_#.ycAT`*n">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false"></mutation>
+          <field name="OLD_TEX_NAME">&lt;no textures&gt;</field>
+          <value name="MATERIAL">
+            <block type="materialList" id="vj@TjIU{^h]QM-B/zwa}">
+              <field name="FIELDNAME">&lt;none&gt;</field>
+            </block>
+          </value>
+          <value name="NEW_TEX_URL">
+            <shadow type="text" id="(LXnw,*JuG5erfP2t_if">
+              <field name="TEXT">./newTexture.png</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+    </block>
     <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="20WhZF`V7R[9.lxcw=n," x="-1130" y="830">
       <mutation>
         <arg name="frame" varid="NLUlWtZaGs$9tHAp=RT6"/>
@@ -1264,5 +1273,5 @@
       </statement>
     </block>
   </tab>
-  <editorsettings viewport-x="1415" viewport-y="194" viewport-w="960" viewport-h="604" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+  <editorsettings viewport-x="1178" viewport-y="164" viewport-w="960" viewport-h="604" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
 </xml>

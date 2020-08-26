@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <tab name="init" type="InitTab" active="false" scrollx="1292.3659667968752" scrolly="844.5" scale="1">
+  <tab name="init" type="InitTab" active="false" scrollx="1292.365966796875" scrolly="844.5" scale="1">
     <block xmlns="https://developers.google.com/blockly/xml" type="initSettings" id="XtmV2SF[F-3GtO[7jp6+" x="-1130" y="-610">
       <field name="LOAD_COMP_ASSETS">FALSE</field>
       <field name="FULLSCREEN">TRUE</field>
@@ -158,7 +158,7 @@
       </statement>
     </block>
   </tab>
-  <tab name="main" type="MainTab" active="true" scrollx="1381.166015625" scrolly="838.1663208007812" scale="1">
+  <tab name="main" type="MainTab" active="true" scrollx="1250.52880859375" scrolly="343.2115173339844" scale="0.6260121018585126">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="NLUlWtZaGs$9tHAp=RT6" type="">frame</variable>
     </variables>
@@ -199,22 +199,6 @@
           </statement>
         </block>
       </next>
-    </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="zoomCameraToObject" id="9:Sr:xQU|]}{LNU.enM0" x="-1170" y="-670">
-      <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
-      <value name="OBJECT">
-        <shadow type="objectList" id="AA)OMpiwAQZAK:3y%@Lm">
-          <field name="FIELDNAME">lift-4m</field>
-        </shadow>
-        <block type="groupList" id="ms[M/G=1R5+@o*?wc|.;">
-          <field name="FIELDNAME">lamp3</field>
-        </block>
-      </value>
-      <value name="DURATION">
-        <shadow type="math_number" id="*?i9E*vK|muv#8w[}DY#">
-          <field name="NUM">1</field>
-        </shadow>
-      </value>
     </block>
     <block xmlns="https://developers.google.com/blockly/xml" type="hide" id="qFsx?mBvRVYVydd}.{:;" x="-750" y="-650">
       <value name="VALUE">
@@ -407,80 +391,80 @@
         </block>
       </value>
       <statement name="DO">
-        <block type="zoomCameraToObject" id="Hy+8:Ny._zMHBQ;2BK;{">
-          <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
-          <value name="OBJECT">
-            <shadow type="objectList" id="=Y|X:vj6wdj?2QBUqYB]">
-              <field name="FIELDNAME">&lt;none&gt;</field>
-            </shadow>
-            <block type="groupList" id="=S)7*nRj55!Xj]FzO^Oa">
-              <field name="FIELDNAME">lamp1</field>
+        <block type="hide" id="$/aAy}/n#RgBA)%6In*`">
+          <value name="VALUE">
+            <block type="groupList" id="W.`fc;UbTL{9jqEEmzN@">
+              <field name="FIELDNAME">lamp2</field>
             </block>
           </value>
-          <value name="DURATION">
-            <shadow type="math_number" id="5]J(3X?BS64`oa$NKSdi">
-              <field name="NUM">3</field>
-            </shadow>
-          </value>
           <next>
-            <block type="hide" id="$/aAy}/n#RgBA)%6In*`">
+            <block type="hide" id="V3V|S;Htnyd5++k:#Q;+">
               <value name="VALUE">
-                <block type="groupList" id="W.`fc;UbTL{9jqEEmzN@">
-                  <field name="FIELDNAME">lamp2</field>
+                <block type="groupList" id="$dCixEJiq)=-_z8q.~/@">
+                  <field name="FIELDNAME">lamp3</field>
                 </block>
               </value>
               <next>
-                <block type="hide" id="V3V|S;Htnyd5++k:#Q;+">
+                <block type="show" id="@iD3;$m@iNSA+m}:4%J[">
                   <value name="VALUE">
-                    <block type="groupList" id="$dCixEJiq)=-_z8q.~/@">
-                      <field name="FIELDNAME">lamp3</field>
+                    <block type="groupList" id="k8.~7z}Eq$qhU-xWQOop">
+                      <field name="FIELDNAME">lamp1</field>
                     </block>
                   </value>
                   <next>
-                    <block type="show" id="@iD3;$m@iNSA+m}:4%J[">
-                      <value name="VALUE">
-                        <block type="groupList" id="k8.~7z}Eq$qhU-xWQOop">
-                          <field name="FIELDNAME">lamp1</field>
-                        </block>
-                      </value>
-                      <next>
-                        <block type="controls_if" id="_E#[za2V}Y(zRA;rP?8/">
-                          <value name="IF0">
-                            <block type="isObjectVisible" id="oSp08eOE*HPd1z#~$m[f">
-                              <value name="VALUE">
-                                <block type="groupList" id=".r(BK_-Gk$E`9V.J}_:j">
-                                  <field name="FIELDNAME">spots</field>
-                                </block>
-                              </value>
+                    <block type="controls_if" id="_E#[za2V}Y(zRA;rP?8/">
+                      <value name="IF0">
+                        <block type="isObjectVisible" id="oSp08eOE*HPd1z#~$m[f">
+                          <value name="VALUE">
+                            <block type="groupList" id=".r(BK_-Gk$E`9V.J}_:j">
+                              <field name="FIELDNAME">spots</field>
                             </block>
                           </value>
-                          <statement name="DO0">
-                            <block type="show" id="kLsm2]bd}qECnS4ZLsOZ">
+                        </block>
+                      </value>
+                      <statement name="DO0">
+                        <block type="show" id="kLsm2]bd}qECnS4ZLsOZ">
+                          <value name="VALUE">
+                            <block type="objectList" id="Sy=j,fYHDw`V1lZy1n12">
+                              <field name="FIELDNAME">Spot.1</field>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="hide" id="NkERt=IL)1Vu((f={v@,">
                               <value name="VALUE">
-                                <block type="objectList" id="Sy=j,fYHDw`V1lZy1n12">
-                                  <field name="FIELDNAME">Spot.1</field>
+                                <block type="objectList" id="Q7Vujz(8z$Hb_?!BAESD">
+                                  <field name="FIELDNAME">Spot.2</field>
                                 </block>
                               </value>
                               <next>
-                                <block type="hide" id="NkERt=IL)1Vu((f={v@,">
+                                <block type="hide" id="jXq,d?/^0IP8QWO]M^EZ">
                                   <value name="VALUE">
-                                    <block type="objectList" id="Q7Vujz(8z$Hb_?!BAESD">
-                                      <field name="FIELDNAME">Spot.2</field>
+                                    <block type="objectList" id="AaY*|Sp=ADy1F7+`PGt.">
+                                      <field name="FIELDNAME">Spot.3</field>
                                     </block>
                                   </value>
-                                  <next>
-                                    <block type="hide" id="jXq,d?/^0IP8QWO]M^EZ">
-                                      <value name="VALUE">
-                                        <block type="objectList" id="AaY*|Sp=ADy1F7+`PGt.">
-                                          <field name="FIELDNAME">Spot.3</field>
-                                        </block>
-                                      </value>
-                                    </block>
-                                  </next>
                                 </block>
                               </next>
                             </block>
-                          </statement>
+                          </next>
+                        </block>
+                      </statement>
+                      <next>
+                        <block type="zoomCameraToObject" id="Hy+8:Ny._zMHBQ;2BK;{">
+                          <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+                          <value name="OBJECT">
+                            <shadow type="objectList" id="=Y|X:vj6wdj?2QBUqYB]">
+                              <field name="FIELDNAME">&lt;none&gt;</field>
+                            </shadow>
+                            <block type="groupList" id="=S)7*nRj55!Xj]FzO^Oa">
+                              <field name="FIELDNAME">lamp1</field>
+                            </block>
+                          </value>
+                          <value name="DURATION">
+                            <shadow type="math_number" id="5]J(3X?BS64`oa$NKSdi">
+                              <field name="NUM">3</field>
+                            </shadow>
+                          </value>
                         </block>
                       </next>
                     </block>
@@ -501,82 +485,64 @@
             </block>
           </value>
           <statement name="DO">
-            <block type="zoomCameraToObject" id="kPt[$DcMVl:O,Jg~!h3*">
-              <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
-              <value name="OBJECT">
-                <shadow type="objectList">
-                  <field name="FIELDNAME">&lt;none&gt;</field>
-                </shadow>
-                <block type="groupList" id="XZNDH.RqxBJo`ki)_o{^">
+            <block type="show" id="~$}~*LIj/RjnAtc$Q6.T">
+              <value name="VALUE">
+                <block type="groupList" id="m[L_%4k^@@qb,.v:zcXn">
                   <field name="FIELDNAME">lamp2</field>
                 </block>
               </value>
-              <value name="DURATION">
-                <shadow type="math_number" id=";SA[|z^6WHZt%DKISsZI">
-                  <field name="NUM">3</field>
-                </shadow>
-              </value>
               <next>
-                <block type="show" id="~$}~*LIj/RjnAtc$Q6.T">
+                <block type="hide" id="~TO)c!nRBfH-5]=iX-`U">
                   <value name="VALUE">
-                    <block type="groupList" id="m[L_%4k^@@qb,.v:zcXn">
-                      <field name="FIELDNAME">lamp2</field>
+                    <block type="groupList" id="*yq{uT8HF5;bjIL044Ps">
+                      <field name="FIELDNAME">lamp3</field>
                     </block>
                   </value>
                   <next>
-                    <block type="hide" id="~TO)c!nRBfH-5]=iX-`U">
+                    <block type="hide" id=".b)?q3hWFIMx}:VFwrWt">
                       <value name="VALUE">
-                        <block type="groupList" id="*yq{uT8HF5;bjIL044Ps">
-                          <field name="FIELDNAME">lamp3</field>
+                        <block type="groupList" id="5wf0:hLi)M=Fb1CgeYXB">
+                          <field name="FIELDNAME">lamp1</field>
                         </block>
                       </value>
                       <next>
-                        <block type="hide" id=".b)?q3hWFIMx}:VFwrWt">
-                          <value name="VALUE">
-                            <block type="groupList" id="5wf0:hLi)M=Fb1CgeYXB">
-                              <field name="FIELDNAME">lamp1</field>
-                            </block>
-                          </value>
-                          <next>
-                            <block type="controls_if" id="rIvMr31j{7V7;M/wz]W5">
-                              <value name="IF0">
-                                <block type="isObjectVisible" id="`GhG9ci4/[i2S*[xsr3r">
-                                  <value name="VALUE">
-                                    <block type="groupList" id="`s@Ph*_X,EEpxGgt+vA1">
-                                      <field name="FIELDNAME">spots</field>
-                                    </block>
-                                  </value>
+                        <block type="controls_if" id="rIvMr31j{7V7;M/wz]W5">
+                          <value name="IF0">
+                            <block type="isObjectVisible" id="`GhG9ci4/[i2S*[xsr3r">
+                              <value name="VALUE">
+                                <block type="groupList" id="`s@Ph*_X,EEpxGgt+vA1">
+                                  <field name="FIELDNAME">spots</field>
                                 </block>
                               </value>
-                              <statement name="DO0">
-                                <block type="show" id="fv:)%3K0SM*eXCzDH4Mc">
+                            </block>
+                          </value>
+                          <statement name="DO0">
+                            <block type="show" id="fv:)%3K0SM*eXCzDH4Mc">
+                              <value name="VALUE">
+                                <block type="objectList" id="e`P!5qdGK)p4P!q2]U@T">
+                                  <field name="FIELDNAME">Spot.2</field>
+                                </block>
+                              </value>
+                              <next>
+                                <block type="hide" id="/as7{Jz^@@^iBo`h|MAa">
                                   <value name="VALUE">
-                                    <block type="objectList" id="e`P!5qdGK)p4P!q2]U@T">
-                                      <field name="FIELDNAME">Spot.2</field>
+                                    <block type="objectList" id="Gl4/mES,C-@(Gc1|I,uq">
+                                      <field name="FIELDNAME">Spot.1</field>
                                     </block>
                                   </value>
                                   <next>
-                                    <block type="hide" id="/as7{Jz^@@^iBo`h|MAa">
+                                    <block type="hide" id="Q3_KCsDVc}so+.0qdInz">
                                       <value name="VALUE">
-                                        <block type="objectList" id="Gl4/mES,C-@(Gc1|I,uq">
-                                          <field name="FIELDNAME">Spot.1</field>
+                                        <block type="objectList" id="sNM1eDf;t0^Y2$UAF6J~">
+                                          <field name="FIELDNAME">Spot.3</field>
                                         </block>
                                       </value>
-                                      <next>
-                                        <block type="hide" id="Q3_KCsDVc}so+.0qdInz">
-                                          <value name="VALUE">
-                                            <block type="objectList" id="sNM1eDf;t0^Y2$UAF6J~">
-                                              <field name="FIELDNAME">Spot.3</field>
-                                            </block>
-                                          </value>
-                                        </block>
-                                      </next>
                                     </block>
                                   </next>
                                 </block>
-                              </statement>
+                              </next>
                             </block>
-                          </next>
+                          </statement>
                         </block>
                       </next>
                     </block>
@@ -595,82 +561,64 @@
                 </block>
               </value>
               <statement name="DO">
-                <block type="zoomCameraToObject" id="-hQzYpAqKNIO.ejt45^J">
-                  <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
-                  <value name="OBJECT">
-                    <shadow type="objectList">
-                      <field name="FIELDNAME">&lt;none&gt;</field>
-                    </shadow>
-                    <block type="groupList" id="C{,%Q$*[rCDQB|d?Lzax">
+                <block type="show" id="Z4*Zir2??g:s2Gz)C}0D">
+                  <value name="VALUE">
+                    <block type="groupList" id="x@cn$8cdxx1`athlxbE-">
                       <field name="FIELDNAME">lamp3</field>
                     </block>
                   </value>
-                  <value name="DURATION">
-                    <shadow type="math_number" id="^FEZx~VpOoJh|-O${`#~">
-                      <field name="NUM">3</field>
-                    </shadow>
-                  </value>
                   <next>
-                    <block type="show" id="Z4*Zir2??g:s2Gz)C}0D">
+                    <block type="hide" id="+}@aw4I-d^+hd6WKfoof">
                       <value name="VALUE">
-                        <block type="groupList" id="x@cn$8cdxx1`athlxbE-">
-                          <field name="FIELDNAME">lamp3</field>
+                        <block type="groupList" id=";/4!:#,/b0rHMKC!Z/v$">
+                          <field name="FIELDNAME">lamp2</field>
                         </block>
                       </value>
                       <next>
-                        <block type="hide" id="+}@aw4I-d^+hd6WKfoof">
+                        <block type="hide" id="apk8(06.j2`*_t~/2wcH">
                           <value name="VALUE">
-                            <block type="groupList" id=";/4!:#,/b0rHMKC!Z/v$">
-                              <field name="FIELDNAME">lamp2</field>
+                            <block type="groupList" id="aEotIeeR8fYm^.vYr}m-">
+                              <field name="FIELDNAME">lamp1</field>
                             </block>
                           </value>
                           <next>
-                            <block type="hide" id="apk8(06.j2`*_t~/2wcH">
-                              <value name="VALUE">
-                                <block type="groupList" id="aEotIeeR8fYm^.vYr}m-">
-                                  <field name="FIELDNAME">lamp1</field>
-                                </block>
-                              </value>
-                              <next>
-                                <block type="controls_if" id="d;t*]s({H9PBfg[`@wt*">
-                                  <value name="IF0">
-                                    <block type="isObjectVisible" id=":{LYFIA;$n-QQ.7-wlm|">
-                                      <value name="VALUE">
-                                        <block type="groupList" id="]q+?Sr3qM?]ZtBI=jq^x">
-                                          <field name="FIELDNAME">spots</field>
-                                        </block>
-                                      </value>
+                            <block type="controls_if" id="d;t*]s({H9PBfg[`@wt*">
+                              <value name="IF0">
+                                <block type="isObjectVisible" id=":{LYFIA;$n-QQ.7-wlm|">
+                                  <value name="VALUE">
+                                    <block type="groupList" id="]q+?Sr3qM?]ZtBI=jq^x">
+                                      <field name="FIELDNAME">spots</field>
                                     </block>
                                   </value>
-                                  <statement name="DO0">
-                                    <block type="show" id="Z/}%rF{!o#,P!6[)HI:%">
+                                </block>
+                              </value>
+                              <statement name="DO0">
+                                <block type="show" id="Z/}%rF{!o#,P!6[)HI:%">
+                                  <value name="VALUE">
+                                    <block type="objectList" id="e2D{e2an|xQjeaR$j;2q">
+                                      <field name="FIELDNAME">Spot.3</field>
+                                    </block>
+                                  </value>
+                                  <next>
+                                    <block type="hide" id="fo$y|eaYa_bbR~Eexd%5">
                                       <value name="VALUE">
-                                        <block type="objectList" id="e2D{e2an|xQjeaR$j;2q">
-                                          <field name="FIELDNAME">Spot.3</field>
+                                        <block type="objectList" id="/Jn*NaCRpO~J/n^FQ1*r">
+                                          <field name="FIELDNAME">Spot.2</field>
                                         </block>
                                       </value>
                                       <next>
-                                        <block type="hide" id="fo$y|eaYa_bbR~Eexd%5">
+                                        <block type="hide" id="}8h[U1WyzSyFL$9WsQ6v">
                                           <value name="VALUE">
-                                            <block type="objectList" id="/Jn*NaCRpO~J/n^FQ1*r">
-                                              <field name="FIELDNAME">Spot.2</field>
+                                            <block type="objectList" id="^k}ndI!3z5$uejj`Y:T.">
+                                              <field name="FIELDNAME">Spot.1</field>
                                             </block>
                                           </value>
-                                          <next>
-                                            <block type="hide" id="}8h[U1WyzSyFL$9WsQ6v">
-                                              <value name="VALUE">
-                                                <block type="objectList" id="^k}ndI!3z5$uejj`Y:T.">
-                                                  <field name="FIELDNAME">Spot.1</field>
-                                                </block>
-                                              </value>
-                                            </block>
-                                          </next>
                                         </block>
                                       </next>
                                     </block>
-                                  </statement>
+                                  </next>
                                 </block>
-                              </next>
+                              </statement>
                             </block>
                           </next>
                         </block>
@@ -1131,24 +1079,7 @@
         </block>
       </next>
     </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="ssaoAdv" id="|*={K^2+yF=V,f0,OEzX" x="70" y="170">
-      <value name="RADIUS">
-        <shadow type="number_slider" id="h9wBx-Y4|NH=o-t=4:u4">
-          <field name="NUM" min="0" max="10" step="0.1">0.1</field>
-        </shadow>
-      </value>
-      <value name="MIN_DIST">
-        <shadow type="number_slider" id="b+E;N_r-wd!of)rZgVtK">
-          <field name="NUM" min="0.001" max="0.01" step="0.001">0.005</field>
-        </shadow>
-      </value>
-      <value name="MAX_DIST">
-        <shadow type="number_slider" id="Wk)}=kgF)Z^GqZ{N%oIa">
-          <field name="NUM" min="0" max="10" step="0.1">0.1</field>
-        </shadow>
-      </value>
-    </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="20WhZF`V7R[9.lxcw=n," x="-1130" y="830">
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="20WhZF`V7R[9.lxcw=n," x="-1130" y="650">
       <mutation>
         <arg name="frame" varid="NLUlWtZaGs$9tHAp=RT6"/>
       </mutation>
@@ -1264,5 +1195,5 @@
       </statement>
     </block>
   </tab>
-  <editorsettings viewport-x="1415" viewport-y="194" viewport-w="960" viewport-h="604" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+  <editorsettings viewport-x="1810" viewport-y="134" viewport-w="960" viewport-h="604" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
 </xml>

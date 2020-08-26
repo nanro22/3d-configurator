@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <tab name="init" type="InitTab" active="false" scrollx="1292.3659667968752" scrolly="844.5" scale="1">
+  <tab name="init" type="InitTab" active="false" scrollx="1292.365966796875" scrolly="844.5" scale="1">
     <block xmlns="https://developers.google.com/blockly/xml" type="initSettings" id="XtmV2SF[F-3GtO[7jp6+" x="-1130" y="-610">
       <field name="LOAD_COMP_ASSETS">FALSE</field>
       <field name="FULLSCREEN">TRUE</field>
@@ -158,7 +158,7 @@
       </statement>
     </block>
   </tab>
-  <tab name="main" type="MainTab" active="true" scrollx="1381.166015625" scrolly="838.1663208007812" scale="1">
+  <tab name="main" type="MainTab" active="true" scrollx="1200.380126953125" scrolly="387.4289855957031" scale="0.6260121018585126">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="NLUlWtZaGs$9tHAp=RT6" type="">frame</variable>
     </variables>
@@ -199,22 +199,6 @@
           </statement>
         </block>
       </next>
-    </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="zoomCameraToObject" id="9:Sr:xQU|]}{LNU.enM0" x="-1170" y="-670">
-      <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
-      <value name="OBJECT">
-        <shadow type="objectList" id="AA)OMpiwAQZAK:3y%@Lm">
-          <field name="FIELDNAME">lift-4m</field>
-        </shadow>
-        <block type="groupList" id="ms[M/G=1R5+@o*?wc|.;">
-          <field name="FIELDNAME">lamp3</field>
-        </block>
-      </value>
-      <value name="DURATION">
-        <shadow type="math_number" id="*?i9E*vK|muv#8w[}DY#">
-          <field name="NUM">1</field>
-        </shadow>
-      </value>
     </block>
     <block xmlns="https://developers.google.com/blockly/xml" type="hide" id="qFsx?mBvRVYVydd}.{:;" x="-750" y="-650">
       <value name="VALUE">
@@ -1131,23 +1115,6 @@
         </block>
       </next>
     </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="ssaoAdv" id="|*={K^2+yF=V,f0,OEzX" x="70" y="170">
-      <value name="RADIUS">
-        <shadow type="number_slider" id="h9wBx-Y4|NH=o-t=4:u4">
-          <field name="NUM" min="0" max="10" step="0.1">0.1</field>
-        </shadow>
-      </value>
-      <value name="MIN_DIST">
-        <shadow type="number_slider" id="b+E;N_r-wd!of)rZgVtK">
-          <field name="NUM" min="0.001" max="0.01" step="0.001">0.005</field>
-        </shadow>
-      </value>
-      <value name="MAX_DIST">
-        <shadow type="number_slider" id="Wk)}=kgF)Z^GqZ{N%oIa">
-          <field name="NUM" min="0" max="10" step="0.1">0.1</field>
-        </shadow>
-      </value>
-    </block>
     <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="20WhZF`V7R[9.lxcw=n," x="-1130" y="830">
       <mutation>
         <arg name="frame" varid="NLUlWtZaGs$9tHAp=RT6"/>
@@ -1264,5 +1231,5 @@
       </statement>
     </block>
   </tab>
-  <editorsettings viewport-x="1415" viewport-y="194" viewport-w="960" viewport-h="604" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+  <editorsettings viewport-x="1810" viewport-y="134" viewport-w="960" viewport-h="604" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
 </xml>
