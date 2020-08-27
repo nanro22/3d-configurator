@@ -158,11 +158,12 @@
       </statement>
     </block>
   </tab>
-  <tab name="main" type="MainTab" active="true" scrollx="171.69699096679688" scrolly="895.5433349609375" scale="0.7912092655287302">
+  <tab name="main" type="MainTab" active="true" scrollx="1261.5240478515625" scrolly="-163.97918701171875" scale="0.7037802038446168">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="NLUlWtZaGs$9tHAp=RT6" type="">frame</variable>
+      <variable id="jEMR8W4Yq!m3+FZU$OJL" type="">annot_visible</variable>
     </variables>
-    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="(#XPjjxLY-JY1v=B``P$" x="370" y="-1010">
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="(#XPjjxLY-JY1v=B``P$" x="350" y="-1070">
       <field name="EVENT">click</field>
       <field name="PARENT">TRUE</field>
       <value name="ID">
@@ -204,6 +205,16 @@
               </value>
             </block>
           </value>
+          <next>
+            <block type="variables_set" id="N]cGG${RPg^frY!bEsQo">
+              <field name="VAR" id="jEMR8W4Yq!m3+FZU$OJL">annot_visible</field>
+              <value name="VALUE">
+                <block type="logic_boolean" id="SWOWWA2F+)+1I]XQy)_+">
+                  <field name="BOOL">FALSE</field>
+                </block>
+              </value>
+            </block>
+          </next>
         </block>
       </statement>
       <next>
@@ -310,6 +321,16 @@
                               </value>
                             </block>
                           </statement>
+                          <next>
+                            <block type="variables_set" id="$k9d.T?2-H_I^,,t-hP!">
+                              <field name="VAR" id="jEMR8W4Yq!m3+FZU$OJL">annot_visible</field>
+                              <value name="VALUE">
+                                <block type="logic_boolean" id="FS#RX(6QygXrpNzK,c0D">
+                                  <field name="BOOL">TRUE</field>
+                                </block>
+                              </value>
+                            </block>
+                          </next>
                         </block>
                       </next>
                     </block>
@@ -320,6 +341,14 @@
           </statement>
         </block>
       </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="+o`7S[d55k{l:uO5=q|=" x="-770" y="-750">
+      <field name="VAR" id="jEMR8W4Yq!m3+FZU$OJL">annot_visible</field>
+      <value name="VALUE">
+        <block type="logic_boolean" id="rgBV@}gQ,.=(DT0_6AC?">
+          <field name="BOOL">TRUE</field>
+        </block>
+      </value>
     </block>
     <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="FT9tc1K@WQ67MX(5gQZr" x="-410" y="-750">
       <field name="EVENT">click</field>
@@ -679,19 +708,38 @@
                                 </block>
                               </value>
                               <next>
-                                <block type="setHTMLElemStyle" id="hX:2lG9fQq@k=5baA:_c">
-                                  <field name="PROPERTY">display</field>
-                                  <field name="PARENT">FALSE</field>
-                                  <value name="VALUE">
-                                    <block type="text" id="5?JwWXJH5OIqze)9)uP@">
-                                      <field name="TEXT">block</field>
+                                <block type="controls_if" id="_pVBc`g~LyIzANw]!dal">
+                                  <value name="IF0">
+                                    <block type="logic_compare" id="WrvSv+?3_c0KycCzZetk">
+                                      <field name="OP">EQ</field>
+                                      <value name="A">
+                                        <block type="variables_get" id="KMKm0t5;AR;GalDW~1R?">
+                                          <field name="VAR" id="jEMR8W4Yq!m3+FZU$OJL">annot_visible</field>
+                                        </block>
+                                      </value>
+                                      <value name="B">
+                                        <block type="logic_boolean" id="U@kb(A%r2ZWstpRnCg4`">
+                                          <field name="BOOL">TRUE</field>
+                                        </block>
+                                      </value>
                                     </block>
                                   </value>
-                                  <value name="ID">
-                                    <block type="text" id="xu{0Fc]FOaF!;XJgpm_q">
-                                      <field name="TEXT">poi_2</field>
+                                  <statement name="DO0">
+                                    <block type="setHTMLElemStyle" id="hX:2lG9fQq@k=5baA:_c">
+                                      <field name="PROPERTY">display</field>
+                                      <field name="PARENT">FALSE</field>
+                                      <value name="VALUE">
+                                        <block type="text" id="5?JwWXJH5OIqze)9)uP@">
+                                          <field name="TEXT">block</field>
+                                        </block>
+                                      </value>
+                                      <value name="ID">
+                                        <block type="text" id="xu{0Fc]FOaF!;XJgpm_q">
+                                          <field name="TEXT">poi_2</field>
+                                        </block>
+                                      </value>
                                     </block>
-                                  </value>
+                                  </statement>
                                 </block>
                               </next>
                             </block>
@@ -815,19 +863,38 @@
                                     </block>
                                   </value>
                                   <next>
-                                    <block type="setHTMLElemStyle" id="..sD:v*Ke+)k,TkMFhwG">
-                                      <field name="PROPERTY">display</field>
-                                      <field name="PARENT">FALSE</field>
-                                      <value name="VALUE">
-                                        <block type="text" id="HI`Cyr[cnllF[4)r0!%9">
-                                          <field name="TEXT">block</field>
+                                    <block type="controls_if" id=":iz/ZN5g-_sUT]_Dzx]n">
+                                      <value name="IF0">
+                                        <block type="logic_compare" id="|J=9iz1iKjhgIntYRugo">
+                                          <field name="OP">EQ</field>
+                                          <value name="A">
+                                            <block type="variables_get" id="|-UJEv)l]sQ9_s8nsJ-i">
+                                              <field name="VAR" id="jEMR8W4Yq!m3+FZU$OJL">annot_visible</field>
+                                            </block>
+                                          </value>
+                                          <value name="B">
+                                            <block type="logic_boolean" id="]-AWRk8sLU|osI5@*:K]">
+                                              <field name="BOOL">TRUE</field>
+                                            </block>
+                                          </value>
                                         </block>
                                       </value>
-                                      <value name="ID">
-                                        <block type="text" id="`0C/Ht]0bvzEO@4?z:),">
-                                          <field name="TEXT">poi_3</field>
+                                      <statement name="DO0">
+                                        <block type="setHTMLElemStyle" id="..sD:v*Ke+)k,TkMFhwG">
+                                          <field name="PROPERTY">display</field>
+                                          <field name="PARENT">FALSE</field>
+                                          <value name="VALUE">
+                                            <block type="text" id="HI`Cyr[cnllF[4)r0!%9">
+                                              <field name="TEXT">block</field>
+                                            </block>
+                                          </value>
+                                          <value name="ID">
+                                            <block type="text" id="`0C/Ht]0bvzEO@4?z:),">
+                                              <field name="TEXT">poi_3</field>
+                                            </block>
+                                          </value>
                                         </block>
-                                      </value>
+                                      </statement>
                                     </block>
                                   </next>
                                 </block>
@@ -951,19 +1018,38 @@
                                         </block>
                                       </value>
                                       <next>
-                                        <block type="setHTMLElemStyle" id="mck9~S`v`pupcC]Dz=lj">
-                                          <field name="PROPERTY">display</field>
-                                          <field name="PARENT">FALSE</field>
-                                          <value name="VALUE">
-                                            <block type="text" id="FCiMXb7)YZ#)~SXw4pO,">
-                                              <field name="TEXT">block</field>
+                                        <block type="controls_if" id="N+Vi#k3f.)e4iWobuhOd">
+                                          <value name="IF0">
+                                            <block type="logic_compare" id="XQOEn9k4P,zkZp.7rDHC">
+                                              <field name="OP">EQ</field>
+                                              <value name="A">
+                                                <block type="variables_get" id="uI`$W0HeXG=RE@E.iHwP">
+                                                  <field name="VAR" id="jEMR8W4Yq!m3+FZU$OJL">annot_visible</field>
+                                                </block>
+                                              </value>
+                                              <value name="B">
+                                                <block type="logic_boolean" id="Zo#-QdZ6z4%lE2JJBWP@">
+                                                  <field name="BOOL">TRUE</field>
+                                                </block>
+                                              </value>
                                             </block>
                                           </value>
-                                          <value name="ID">
-                                            <block type="text" id="?0ri]Q{D_|nVKyW9N8mO">
-                                              <field name="TEXT">poi_4</field>
+                                          <statement name="DO0">
+                                            <block type="setHTMLElemStyle" id="mck9~S`v`pupcC]Dz=lj">
+                                              <field name="PROPERTY">display</field>
+                                              <field name="PARENT">FALSE</field>
+                                              <value name="VALUE">
+                                                <block type="text" id="FCiMXb7)YZ#)~SXw4pO,">
+                                                  <field name="TEXT">block</field>
+                                                </block>
+                                              </value>
+                                              <value name="ID">
+                                                <block type="text" id="?0ri]Q{D_|nVKyW9N8mO">
+                                                  <field name="TEXT">poi_4</field>
+                                                </block>
+                                              </value>
                                             </block>
-                                          </value>
+                                          </statement>
                                         </block>
                                       </next>
                                     </block>
@@ -1678,7 +1764,7 @@
         </block>
       </value>
     </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="20WhZF`V7R[9.lxcw=n," x="-1290" y="1130">
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="20WhZF`V7R[9.lxcw=n," x="-1350" y="1290">
       <mutation>
         <arg name="frame" varid="NLUlWtZaGs$9tHAp=RT6"/>
       </mutation>
