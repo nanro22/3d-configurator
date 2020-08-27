@@ -72,18 +72,6 @@
                 </div>
                 <div class="type-controll-panel" style="background-color: rgb(255, 255, 255);">
                     <div class="type-head-div">
-                        <header class="controll-panel-header"><p style="color:#23211F"; align="center";><FONT face = "prompt">Route</FONT></p></header>
-                    </div>
-                    <p style="margin-bottom:10px;"></p>
-                    <div class="type-buttons-div flex-center">
-                        <FONT face = "prompt"; size = "1pt">
-                        <div class="ring-type-button ring-button-selected" id="button_route_on"><span>On</span></div>
-                        <div class="ring-type-button" id="button_route_off"><span>Off</span></div>
-                        </FONT>
-                    </div>
-                </div>
-                <div class="type-controll-panel" style="background-color: rgb(255, 255, 255);">
-                    <div class="type-head-div">
                         <header class="controll-panel-header"><p style="color:#23211F"; align="center";><FONT face = "prompt">Anotations</FONT></p></header>
                     </div>
                     <p style="margin-bottom:10px;"></p>
@@ -91,6 +79,18 @@
                         <FONT face = "prompt"; size = "1pt">
                         <div class="ring-type-button ring-button-selected" id="show_annot" ><span>On</span></div>
                         <div class="ring-type-button" id="hide_annot" ><span>Off</span></div>
+                        </FONT>
+                    </div>
+                </div>
+                <div class="type-controll-panel" style="background-color: rgb(255, 255, 255);">
+                    <div class="type-head-div">
+                        <header class="controll-panel-header"><p style="color:#23211F"; align="center";><FONT face = "prompt">Route</FONT></p></header>
+                    </div>
+                    <p style="margin-bottom:10px;"></p>
+                    <div class="type-buttons-div flex-center">
+                        <FONT face = "prompt"; size = "1pt">
+                        <div class="ring-type-button ring-button-selected" id="button_route_on"><span>On</span></div>
+                        <div class="ring-type-button" id="button_route_off"><span>Off</span></div>
                         </FONT>
                     </div>
                 </div>
@@ -137,7 +137,7 @@
             document.getElementById(eltPrefix+suffix).classList.add("ring-button-selected");
         }
 
-        var params={"nb_lamp":3,"hauteur":3,"inclinaison":2,"material":1,"jour":true,"route":true};
+        var params={"nb_lamp":3,"hauteur":3,"inclinaison":2,"material":1,"jour":true,"route":true, "anotations":true};
 
         function addButtonListener(eltPrefix,min,max,paramName){
             for(let i=min;i<max;i++){
@@ -171,21 +171,34 @@
                 }
             });
 
-            document.getElementById("button_route_on").addEventListener("click",e=>{
-                    if(!params["route"]){
-                        document.getElementById("button_route_on").classList.remove("ring-button-selected");
-                        params["route"]=true;
-                        document.getElementById("button_route_off").classList.add("ring-button-selected");
-                    }
-                });
-            document.getElementById("button_route_off").addEventListener("click",e=>{
-                    if(params["route"]){
-                        document.getElementById("button_route_on").classList.remove("ring-button-selected");
-                        params["route"]=false;
-                        document.getElementById("button_route_off").classList.add("ring-button-selected");
-                    }
-                });
-
+        document.getElementById("button_route_on").addEventListener("click",e=>{
+                if(!params["route"]){
+                    document.getElementById("button_route_on").classList.remove("ring-button-selected");
+                    params["route"]=true;
+                    document.getElementById("button_route_off").classList.add("ring-button-selected");
+                }
+            });
+        document.getElementById("hide_annot").addEventListener("click",e=>{
+                if(params["route"]){
+                    document.getElementById("show_annot").classList.remove("ring-button-selected");
+                    params["route"]=false;
+                    document.getElementById("hide_annot").classList.add("ring-button-selected");
+                }
+            });
+            document.getElementById("show_annot").addEventListener("click",e=>{
+                if(!params["anotations"]){
+                    document.getElementById("show_annot").classList.remove("ring-button-selected");
+                    params["anotations"]=true;
+                    document.getElementById("hide_annot").classList.add("ring-button-selected");
+                }
+            });
+        document.getElementById("button_route_off").addEventListener("click",e=>{
+                if(params["anotations"]){
+                    document.getElementById("button_route_on").classList.remove("ring-button-selected");
+                    params["anotations"]=false;
+                    document.getElementById("button_route_off").classList.add("ring-button-selected");
+                }
+            });
         function readURL(input) {
             if (input.files && input.files[0]) {
                 var reader = new FileReader();
