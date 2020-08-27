@@ -16,7 +16,7 @@ body {
 
 .configurator-panel {
   position: absolute;
-  width: 268px;
+  width: 270px;
   height: 100%;
   right: 0px;
   top: 0px;
@@ -37,11 +37,10 @@ body {
     position: static;
     width: 240px;
     height: auto;
-    border: 1px solid #ffffff;
     border-radius: 5px;
-    margin-bottom: 8px;
+    /*margin-bottom: 8px;*/
     float: left;
-    padding-bottom: 10px;
+    /*padding-bottom: 10px;*/
 }
 
 .ring-type-button:hover{
