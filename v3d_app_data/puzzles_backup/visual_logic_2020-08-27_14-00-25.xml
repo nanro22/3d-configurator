@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <tab name="init" type="InitTab" active="false" scrollx="1292.3659667968755" scrolly="844.5" scale="1">
+  <tab name="init" type="InitTab" active="false" scrollx="1292.3659667968752" scrolly="844.5" scale="1">
     <block xmlns="https://developers.google.com/blockly/xml" type="initSettings" id="XtmV2SF[F-3GtO[7jp6+" x="-1130" y="-610">
       <field name="LOAD_COMP_ASSETS">FALSE</field>
       <field name="FULLSCREEN">TRUE</field>
@@ -158,7 +158,7 @@
       </statement>
     </block>
   </tab>
-  <tab name="main" type="MainTab" active="true" scrollx="1391.4617919921875" scrolly="475.31869506835903" scale="0.8894994466151905">
+  <tab name="main" type="MainTab" active="true" scrollx="995.5240478515625" scrolly="2.02081298828125" scale="0.7037802038446168">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="jEMR8W4Yq!m3+FZU$OJL" type="">annot_visible</variable>
       <variable id="NLUlWtZaGs$9tHAp=RT6" type="">frame</variable>
@@ -1880,5 +1880,5 @@
       </statement>
     </block>
   </tab>
-  <editorsettings viewport-x="882" viewport-y="249" viewport-w="960" viewport-h="621" viewport-hidden="true" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+  <editorsettings viewport-x="1678" viewport-y="293" viewport-w="960" viewport-h="621" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
 </xml>
