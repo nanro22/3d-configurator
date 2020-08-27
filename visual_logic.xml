@@ -158,7 +158,7 @@
       </statement>
     </block>
   </tab>
-  <tab name="main" type="MainTab" active="true" scrollx="141.55694580078125" scrolly="743.4071044921875" scale="1">
+  <tab name="main" type="MainTab" active="true" scrollx="1275.92041015625" scrolly="259.9110107421875" scale="0.7037802038446168">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="NLUlWtZaGs$9tHAp=RT6" type="">frame</variable>
     </variables>
@@ -412,7 +412,7 @@
         </block>
       </next>
     </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="xgOhCxR_$4DOzdG+Nhg{" x="-1130" y="-430">
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="xgOhCxR_$4DOzdG+Nhg{" x="-1430" y="-450">
       <field name="EVENT">click</field>
       <field name="PARENT">TRUE</field>
       <value name="ID">
@@ -495,6 +495,48 @@
                               </next>
                             </block>
                           </statement>
+                          <next>
+                            <block type="setHTMLElemStyle" id="(dYOn7!1(]1wd!-ssz7j">
+                              <field name="PROPERTY">display</field>
+                              <field name="PARENT">FALSE</field>
+                              <value name="VALUE">
+                                <block type="text" id="C_}K4CAa=97oNl|b5Rho">
+                                  <field name="TEXT">none</field>
+                                </block>
+                              </value>
+                              <value name="ID">
+                                <block type="lists_create_with" id="bs$5+@Z@jt$m^MlhHd?N">
+                                  <mutation items="2"/>
+                                  <value name="ADD0">
+                                    <block type="text" id="$wLj,:Rn#.?j}BgHS(lm">
+                                      <field name="TEXT">poi_4</field>
+                                    </block>
+                                  </value>
+                                  <value name="ADD1">
+                                    <block type="text" id="T1*a[D1pNPN{ci3m!71(">
+                                      <field name="TEXT">poi_3</field>
+                                    </block>
+                                  </value>
+                                </block>
+                              </value>
+                              <next>
+                                <block type="setHTMLElemStyle" id="hX:2lG9fQq@k=5baA:_c">
+                                  <field name="PROPERTY">display</field>
+                                  <field name="PARENT">FALSE</field>
+                                  <value name="VALUE">
+                                    <block type="text" id="5?JwWXJH5OIqze)9)uP@">
+                                      <field name="TEXT">block</field>
+                                    </block>
+                                  </value>
+                                  <value name="ID">
+                                    <block type="text" id="xu{0Fc]FOaF!;XJgpm_q">
+                                      <field name="TEXT">poi_2</field>
+                                    </block>
+                                  </value>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
                         </block>
                       </next>
                     </block>
@@ -589,6 +631,48 @@
                                   </next>
                                 </block>
                               </statement>
+                              <next>
+                                <block type="setHTMLElemStyle" id="P7fZ}~wjt[b{eGvAP7x`">
+                                  <field name="PROPERTY">display</field>
+                                  <field name="PARENT">FALSE</field>
+                                  <value name="VALUE">
+                                    <block type="text" id="S[m}awpMh+%+Q?!@o1]0">
+                                      <field name="TEXT">none</field>
+                                    </block>
+                                  </value>
+                                  <value name="ID">
+                                    <block type="lists_create_with" id="e_rNo1~{wWaFrTD~)4P1">
+                                      <mutation items="2"/>
+                                      <value name="ADD0">
+                                        <block type="text" id="f.^P`)mkb:O3yOE%05!=">
+                                          <field name="TEXT">poi_2</field>
+                                        </block>
+                                      </value>
+                                      <value name="ADD1">
+                                        <block type="text" id="oi+a1ps}nIStXSwaJH.0">
+                                          <field name="TEXT">poi_4</field>
+                                        </block>
+                                      </value>
+                                    </block>
+                                  </value>
+                                  <next>
+                                    <block type="setHTMLElemStyle" id="..sD:v*Ke+)k,TkMFhwG">
+                                      <field name="PROPERTY">display</field>
+                                      <field name="PARENT">FALSE</field>
+                                      <value name="VALUE">
+                                        <block type="text" id="HI`Cyr[cnllF[4)r0!%9">
+                                          <field name="TEXT">block</field>
+                                        </block>
+                                      </value>
+                                      <value name="ID">
+                                        <block type="text" id="`0C/Ht]0bvzEO@4?z:),">
+                                          <field name="TEXT">poi_3</field>
+                                        </block>
+                                      </value>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
                             </block>
                           </next>
                         </block>
@@ -683,6 +767,48 @@
                                       </next>
                                     </block>
                                   </statement>
+                                  <next>
+                                    <block type="setHTMLElemStyle" id="VPQgu).xx/0PgfW{@Pi5">
+                                      <field name="PROPERTY">display</field>
+                                      <field name="PARENT">FALSE</field>
+                                      <value name="VALUE">
+                                        <block type="text" id="u7bLAT0qy]ym{!=.Uc=?">
+                                          <field name="TEXT">none</field>
+                                        </block>
+                                      </value>
+                                      <value name="ID">
+                                        <block type="lists_create_with" id="z53j$+?Ga7rwx4(U|06g">
+                                          <mutation items="2"/>
+                                          <value name="ADD0">
+                                            <block type="text" id="/~o+*YG|.$wYj^jJOuGe">
+                                              <field name="TEXT">poi_2</field>
+                                            </block>
+                                          </value>
+                                          <value name="ADD1">
+                                            <block type="text" id="z$z{hjI4#QVRmYydI~(F">
+                                              <field name="TEXT">poi_3</field>
+                                            </block>
+                                          </value>
+                                        </block>
+                                      </value>
+                                      <next>
+                                        <block type="setHTMLElemStyle" id="mck9~S`v`pupcC]Dz=lj">
+                                          <field name="PROPERTY">display</field>
+                                          <field name="PARENT">FALSE</field>
+                                          <value name="VALUE">
+                                            <block type="text" id="FCiMXb7)YZ#)~SXw4pO,">
+                                              <field name="TEXT">block</field>
+                                            </block>
+                                          </value>
+                                          <value name="ID">
+                                            <block type="text" id="?0ri]Q{D_|nVKyW9N8mO">
+                                              <field name="TEXT">poi_4</field>
+                                            </block>
+                                          </value>
+                                        </block>
+                                      </next>
+                                    </block>
+                                  </next>
                                 </block>
                               </next>
                             </block>
@@ -942,7 +1068,67 @@
         </block>
       </next>
     </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="/!vB;,O^Ufl,agft5/(H" x="-510" y="130">
+    <block xmlns="https://developers.google.com/blockly/xml" type="ssaoAdv" id="|*={K^2+yF=V,f0,OEzX" x="190" y="190">
+      <value name="RADIUS">
+        <shadow type="number_slider" id="h9wBx-Y4|NH=o-t=4:u4">
+          <field name="NUM" min="0" max="10" step="0.1">0.1</field>
+        </shadow>
+      </value>
+      <value name="MIN_DIST">
+        <shadow type="number_slider" id="b+E;N_r-wd!of)rZgVtK">
+          <field name="NUM" min="0.001" max="0.01" step="0.001">0.005</field>
+        </shadow>
+      </value>
+      <value name="MAX_DIST">
+        <shadow type="number_slider" id="Wk)}=kgF)Z^GqZ{N%oIa">
+          <field name="NUM" min="0" max="10" step="0.1">0.1</field>
+        </shadow>
+      </value>
+      <next>
+        <block type="dof" id="+TtpnR$NLbsv+C*sYoEf">
+          <value name="FOCUS">
+            <shadow type="number_slider" id="O:d~V6};q)LvRv})FAt$">
+              <field name="NUM" min="0" max="100" step="0.1">10</field>
+            </shadow>
+          </value>
+          <value name="APERTURE">
+            <shadow type="number_slider" id="Z!qFkM{(|J$+%%X{CedP">
+              <field name="NUM" min="0" max="10" step="0.1">1</field>
+            </shadow>
+          </value>
+          <value name="MAXBLUR">
+            <shadow type="number_slider" id="qu,Ch7a7g--xJ(Ca)``U">
+              <field name="NUM" min="0.001" max="0.1" step="0.001">0.001</field>
+            </shadow>
+          </value>
+          <value name="DEPTH_LEAK_THRESH">
+            <shadow type="number_slider" id=":E^liuZyd:+3q!]S3j)%">
+              <field name="NUM" min="0" max="10" step="0.1">0.2</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="bloom" id="=/+qM0Q5Z;2kpuv#`lgj">
+              <value name="THRESHOLD">
+                <shadow type="number_slider" id="q(.c!qA^0##l8wH:V|/?">
+                  <field name="NUM" min="0" max="10" step="0.1">1.6</field>
+                </shadow>
+              </value>
+              <value name="STRENGTH">
+                <shadow type="number_slider" id="PKflFVuK=)Jc@)aQ@X7?">
+                  <field name="NUM" min="0" max="10" step="0.1">0.3</field>
+                </shadow>
+              </value>
+              <value name="RADIUS">
+                <shadow type="number_slider" id="%_#}QE4,Z?n)dJL#sLbh">
+                  <field name="NUM" min="0" max="10" step="0.1">0.5</field>
+                </shadow>
+              </value>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="/!vB;,O^Ufl,agft5/(H" x="-370" y="330">
       <field name="EVENT">click</field>
       <field name="PARENT">TRUE</field>
       <value name="ID">
@@ -1215,67 +1401,125 @@
         </block>
       </next>
     </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="ssaoAdv" id="|*={K^2+yF=V,f0,OEzX" x="190" y="190">
-      <value name="RADIUS">
-        <shadow type="number_slider" id="h9wBx-Y4|NH=o-t=4:u4">
-          <field name="NUM" min="0" max="10" step="0.1">0.1</field>
+    <block xmlns="https://developers.google.com/blockly/xml" type="addAnnotation" id="#m:)uV@PZemFcppgqLnO" x="330" y="470">
+      <value name="ANNOTATION">
+        <shadow type="text" id="lEmnl1%twaY1HVE_LqZi">
+          <field name="TEXT">1</field>
         </shadow>
       </value>
-      <value name="MIN_DIST">
-        <shadow type="number_slider" id="b+E;N_r-wd!of)rZgVtK">
-          <field name="NUM" min="0.001" max="0.01" step="0.001">0.005</field>
+      <value name="TARGET">
+        <block type="objectList" id="g6QBdR9Fx-(09Ap~Xjjs">
+          <field name="FIELDNAME">voltage</field>
+        </block>
+      </value>
+      <value name="CONTENTS">
+        <shadow type="text" id="b+uq?YbmUjnng.swFcYS">
+          <field name="TEXT">Mat extrêmement resistant</field>
         </shadow>
       </value>
-      <value name="MAX_DIST">
-        <shadow type="number_slider" id="Wk)}=kgF)Z^GqZ{N%oIa">
-          <field name="NUM" min="0" max="10" step="0.1">0.1</field>
+      <value name="ID">
+        <shadow type="text" id=",}!kY8j}Ust1F,gZ[*5*">
+          <field name="TEXT">poi_1</field>
         </shadow>
       </value>
       <next>
-        <block type="dof" id="+TtpnR$NLbsv+C*sYoEf">
-          <value name="FOCUS">
-            <shadow type="number_slider" id="O:d~V6};q)LvRv})FAt$">
-              <field name="NUM" min="0" max="100" step="0.1">10</field>
+        <block type="addAnnotation" id="{xX-Y%-c)$7Z/L84U=.c">
+          <value name="ANNOTATION">
+            <shadow type="text" id="lqo)ntJvueV996iyUtqP">
+              <field name="TEXT">2</field>
             </shadow>
           </value>
-          <value name="APERTURE">
-            <shadow type="number_slider" id="Z!qFkM{(|J$+%%X{CedP">
-              <field name="NUM" min="0" max="10" step="0.1">1</field>
+          <value name="TARGET">
+            <block type="objectList" id="RD_KheEa:S1UAw.W_STO">
+              <field name="FIELDNAME">lampe1</field>
+            </block>
+          </value>
+          <value name="CONTENTS">
+            <shadow type="text" id="]Q=2G:OTCj)H(PC7*e7r">
+              <field name="TEXT">Lumière très puissante</field>
             </shadow>
           </value>
-          <value name="MAXBLUR">
-            <shadow type="number_slider" id="qu,Ch7a7g--xJ(Ca)``U">
-              <field name="NUM" min="0.001" max="0.1" step="0.001">0.001</field>
-            </shadow>
-          </value>
-          <value name="DEPTH_LEAK_THRESH">
-            <shadow type="number_slider" id=":E^liuZyd:+3q!]S3j)%">
-              <field name="NUM" min="0" max="10" step="0.1">0.2</field>
+          <value name="ID">
+            <shadow type="text" id="{prW#w[qf|m5q76VO!+c">
+              <field name="TEXT">poi_2</field>
             </shadow>
           </value>
           <next>
-            <block type="bloom" id="=/+qM0Q5Z;2kpuv#`lgj">
-              <value name="THRESHOLD">
-                <shadow type="number_slider" id="q(.c!qA^0##l8wH:V|/?">
-                  <field name="NUM" min="0" max="10" step="0.1">1.6</field>
+            <block type="addAnnotation" id="0E+C](8ZFT6%l+?|cKaE">
+              <value name="ANNOTATION">
+                <shadow type="text" id="X(0r!#)u$3ugc$,bg30q">
+                  <field name="TEXT">2</field>
                 </shadow>
               </value>
-              <value name="STRENGTH">
-                <shadow type="number_slider" id="PKflFVuK=)Jc@)aQ@X7?">
-                  <field name="NUM" min="0" max="10" step="0.1">0.3</field>
+              <value name="TARGET">
+                <block type="objectList" id="Y/ArrUDBy{zpHwGSZh(O">
+                  <field name="FIELDNAME">lampe2</field>
+                </block>
+              </value>
+              <value name="CONTENTS">
+                <shadow type="text" id="esmH^+n:R,czGIgc!$_6">
+                  <field name="TEXT">Lumière très puissante</field>
                 </shadow>
               </value>
-              <value name="RADIUS">
-                <shadow type="number_slider" id="%_#}QE4,Z?n)dJL#sLbh">
-                  <field name="NUM" min="0" max="10" step="0.1">0.5</field>
+              <value name="ID">
+                <shadow type="text" id="5;Iprg:G10fDCJ#7{Pwy">
+                  <field name="TEXT">poi_3</field>
                 </shadow>
               </value>
+              <next>
+                <block type="addAnnotation" id="g6~U$:A|f_7kX7E(F/6T">
+                  <value name="ANNOTATION">
+                    <shadow type="text" id="aJ/@2DB.oj27Wc1|JVfo">
+                      <field name="TEXT">2</field>
+                    </shadow>
+                  </value>
+                  <value name="TARGET">
+                    <block type="objectList" id="yR;q#*/E3*37+9^-JeP_">
+                      <field name="FIELDNAME">lampe3</field>
+                    </block>
+                  </value>
+                  <value name="CONTENTS">
+                    <shadow type="text" id="jz+b/+XA3om)tZMwWkTJ">
+                      <field name="TEXT">Lumière très puissante</field>
+                    </shadow>
+                  </value>
+                  <value name="ID">
+                    <shadow type="text" id="U?p=x`H0FDwyFJGW]DGj">
+                      <field name="TEXT">poi_4</field>
+                    </shadow>
+                  </value>
+                </block>
+              </next>
             </block>
           </next>
         </block>
       </next>
     </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="20WhZF`V7R[9.lxcw=n," x="-1130" y="830">
+    <block xmlns="https://developers.google.com/blockly/xml" type="setHTMLElemStyle" id="+Lr9*}UfvkqPkCRE{H#l" x="310" y="710">
+      <field name="PROPERTY">display</field>
+      <field name="PARENT">FALSE</field>
+      <value name="VALUE">
+        <block type="text" id="0B@1`Y$=9VH6jwNt/@Y{">
+          <field name="TEXT">none</field>
+        </block>
+      </value>
+      <value name="ID">
+        <block type="lists_create_with" id="Y7u,+Dg2-=n8=-_O)/U7">
+          <mutation items="2"/>
+          <value name="ADD0">
+            <block type="text" id=",g5qssKW(Plk)[{/`os!">
+              <field name="TEXT">poi_2</field>
+            </block>
+          </value>
+          <value name="ADD1">
+            <block type="text" id="5pv?)he:1ps);Bpr?c9]">
+              <field name="TEXT">poi_3</field>
+            </block>
+          </value>
+        </block>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="20WhZF`V7R[9.lxcw=n," x="-1290" y="1130">
       <mutation>
         <arg name="frame" varid="NLUlWtZaGs$9tHAp=RT6"/>
       </mutation>
@@ -1391,5 +1635,5 @@
       </statement>
     </block>
   </tab>
-  <editorsettings viewport-x="1708" viewport-y="156" viewport-w="960" viewport-h="621" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+  <editorsettings viewport-x="1487" viewport-y="64" viewport-w="960" viewport-h="621" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
 </xml>
