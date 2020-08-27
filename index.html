@@ -132,7 +132,7 @@
         function unselectButton(eltPrefix,suffix){
             document.getElementById(eltPrefix+suffix).classList.remove("ring-button-selected");
         }
-        
+
         function selectButton(eltPrefix,suffix){
             document.getElementById(eltPrefix+suffix).classList.add("ring-button-selected");
         }
@@ -161,7 +161,7 @@
                     params["jour"]=true;
                     document.getElementById("button_jour").classList.add("ring-button-selected");
                 }
-            }); 
+            });
         document.getElementById("button_nuit").addEventListener("click",e=>{
                 if(params["jour"]){
                     document.getElementById("button_jour").classList.remove("ring-button-selected");
@@ -177,7 +177,7 @@
                     document.getElementById('imgback').src=e.target.result;
                     let divElmt=document.getElementById('main_app').contentWindow.document.getElementById("v3d-container");
                     divElmt.style.backgroundImage="url('" + document.getElementById('imgback').src + "')";
-                    divElmt.style.backgroundSize="cover";
+                    divElmt.style.backgroundSize= "90%" /*"contain"*/;
                     divElmt.style.backgroundRepeat="no-repeat";
                 };
                 reader.readAsDataURL(input.files[0]);
