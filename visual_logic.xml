@@ -158,7 +158,7 @@
       </statement>
     </block>
   </tab>
-  <tab name="main" type="MainTab" active="true" scrollx="900.5928955078125" scrolly="448.2451477050781" scale="0.3918911516733128">
+  <tab name="main" type="MainTab" active="true" scrollx="141.55694580078125" scrolly="743.4071044921875" scale="1">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="NLUlWtZaGs$9tHAp=RT6" type="">frame</variable>
     </variables>
@@ -900,7 +900,7 @@
                   </value>
                   <value name="NEW_TEX_URL">
                     <shadow type="text" id="+^Azf!:!94[ETH)gvcQA">
-                      <field name="TEXT">chrome_BaseColor.png</field>
+                      <field name="TEXT">rouge_BaseColor.png</field>
                     </shadow>
                   </value>
                   <next>
@@ -914,7 +914,7 @@
                       </value>
                       <value name="NEW_TEX_URL">
                         <shadow type="text" id="rfv15+8jC_Y|X;uDmY,n">
-                          <field name="TEXT">chrome_Normal.png</field>
+                          <field name="TEXT">rouge_Normal.png</field>
                         </shadow>
                       </value>
                       <next>
@@ -928,7 +928,7 @@
                           </value>
                           <value name="NEW_TEX_URL">
                             <shadow type="text" id="8k0!+v}yuWHN(~lE/{Iz">
-                              <field name="TEXT">chrome_OcclusionRoughnessMetallic.png</field>
+                              <field name="TEXT">rouge_OcclusionRoughnessMetallic.png</field>
                             </shadow>
                           </value>
                         </block>
