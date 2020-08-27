@@ -170,14 +170,6 @@
                     document.getElementById("button_nuit").classList.add("ring-button-selected");
                 }
             });
-
-        document.getElementById("button_route_on").addEventListener("click",e=>{
-                if(!params["route"]){
-                    document.getElementById("button_route_on").classList.remove("ring-button-selected");
-                    params["route"]=true;
-                    document.getElementById("button_route_off").classList.add("ring-button-selected");
-                }
-            });
         document.getElementById("hide_annot").addEventListener("click",e=>{
                 if(params["route"]){
                     document.getElementById("show_annot").classList.remove("ring-button-selected");
@@ -185,17 +177,24 @@
                     document.getElementById("hide_annot").classList.add("ring-button-selected");
                 }
             });
-            document.getElementById("show_annot").addEventListener("click",e=>{
-                if(!params["anotations"]){
-                    document.getElementById("show_annot").classList.remove("ring-button-selected");
-                    params["anotations"]=true;
-                    document.getElementById("hide_annot").classList.add("ring-button-selected");
+        document.getElementById("show_annot").addEventListener("click",e=>{
+            if(!params["anotations"]){
+                document.getElementById("show_annot").classList.remove("ring-button-selected");
+                params["anotations"]=true;
+                document.getElementById("hide_annot").classList.add("ring-button-selected");
                 }
             });
         document.getElementById("button_route_off").addEventListener("click",e=>{
                 if(params["anotations"]){
                     document.getElementById("button_route_on").classList.remove("ring-button-selected");
                     params["anotations"]=false;
+                    document.getElementById("button_route_off").classList.add("ring-button-selected");
+                }
+            });
+            document.getElementById("button_route_on").addEventListener("click",e=>{
+                if(!params["route"]){
+                    document.getElementById("button_route_on").classList.remove("ring-button-selected");
+                    params["route"]=true;
                     document.getElementById("button_route_off").classList.add("ring-button-selected");
                 }
             });
