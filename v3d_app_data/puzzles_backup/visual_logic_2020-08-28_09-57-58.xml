@@ -158,7 +158,7 @@
       </statement>
     </block>
   </tab>
-  <tab name="main" type="MainTab" active="true" scrollx="1192.930419921875" scrolly="956.1246948242188" scale="0.7912092655287302">
+  <tab name="main" type="MainTab" active="true" scrollx="1132.930419921875" scrolly="535.1246948242188" scale="0.7912092655287302">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="jEMR8W4Yq!m3+FZU$OJL" type="">annot_visible</variable>
       <variable id="NLUlWtZaGs$9tHAp=RT6" type="">frame</variable>
@@ -350,7 +350,7 @@
         </block>
       </value>
     </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="FT9tc1K@WQ67MX(5gQZr" x="-410" y="-750">
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="FT9tc1K@WQ67MX(5gQZr" disabled="true" x="-410" y="-750">
       <field name="EVENT">click</field>
       <field name="PARENT">TRUE</field>
       <value name="ID">
@@ -368,7 +368,7 @@
         </block>
       </statement>
       <next>
-        <block type="eventHTMLElem" id="HiEvuoKCx^LY0+=`BA2A">
+        <block type="eventHTMLElem" id="HiEvuoKCx^LY0+=`BA2A" disabled="true">
           <field name="EVENT">click</field>
           <field name="PARENT">TRUE</field>
           <value name="ID">
@@ -1156,7 +1156,7 @@
         </block>
       </next>
     </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="+tV#g.o*{)Mhspq8PT^z" disabled="true" x="-710" y="30">
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="+tV#g.o*{)Mhspq8PT^z" x="-710" y="30">
       <field name="EVENT">click</field>
       <field name="PARENT">TRUE</field>
       <value name="ID">
